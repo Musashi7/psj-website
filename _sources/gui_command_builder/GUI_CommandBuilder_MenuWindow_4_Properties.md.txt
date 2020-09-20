@@ -1,0 +1,7 @@
+# Properties Window
+
+Display all properties of the selected component.
+The settings of the dialog created can also be set from the Properties window.
+By selecting a component in the Hierarchy window, user can change its parameters in this Properties window.
+
+![](./../_images/GUI_CommandBuilder_MenuWindow_Properties.png)

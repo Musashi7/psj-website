@@ -1,0 +1,35 @@
+---
+lang: en
+title: DeleteEdge
+---
+
+DeleteEdge
+----------
+
+## Description
+
+Delete Edge
+
+## Syntax
+
+DeleteEdge(int\[\] taEdgeKey)
+
+## Inputs
+
+1.  Int\[\]
+
+    Edge cursor(\[Edge ID\])
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+DeleteEdge(\[15\])

@@ -1,0 +1,99 @@
+---
+lang: en
+title: MoveNodeAlongDirection
+---
+
+MoveNodeAlongDirection
+----------------------
+
+#### Description
+
+Move node(s) in a specified direction
+
+#### Syntax
+
+MoveNodeAlongDirection(double dX, double dY, double dZ, double planept\[0\]\[0\], double planept\[0\]\[1\], double planept\[0\]\[2\], double planept\[1\]\[0\], double planept\[1\]\[1\], double planept\[1\]\[2\], double planept\[2\]\[0\], double planept\[2\]\[1\], double planept\[2\]\[2\], Cursor face, double magnitude, bool facepicked, bool elempicked, int\[\] node)
+
+#### Inputs
+
+1.  double
+
+    Displacement in X Direction
+
+2.  double
+
+    Displacement in Y Direction
+
+3.  double
+
+    Displacement in Z Direction
+
+4.  double
+
+    1st coordinate of plane point1
+
+5.  double
+
+    2nd coordinate of plane point1
+
+6.  double
+
+    3rd coordinate of plane point1
+
+7.  double
+
+    1st coordinate of plane point2
+
+8.  double
+
+    2nd coordinate of plane point2
+
+9.  double
+
+    3rd coordinate of plane point2
+
+10. double
+
+    1st coordinate of plane point3
+
+11. double
+
+    2nd coordinate of plane point3
+
+12. double
+
+    3rd coordinate of plane point3
+
+13. Cursor
+
+    selected face cursor
+
+14. double
+
+    Magnitude
+
+15. bool
+
+    is face picked 0=no,1=yes
+
+16. bool
+
+    is element picked 0=no,1=yes
+
+17. int\[\]
+
+    Node List
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+MoveNodeAlongDirection(0.00333333, 0, -0.00111111, 0.01, 0, 0, 0.01, 0.00111111, 0, 0.01, 0.00111111, 0.00111111, 6:24, 0.00351364, 1, 0, \[443, 437\])

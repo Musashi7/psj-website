@@ -1,0 +1,159 @@
+---
+lang: en
+title: AdvcJob
+---
+
+AdvcJob
+-------
+
+## Description
+
+Create advc job
+
+## Syntax
+
+AdvcJob(CString Name, CString Description, int eJobType, Cursor\[\] processSequence, Cursor\[\] elemLocationGroup, Cursor\[\] nodeLocationGroup, bool WriteGroup, Cursor Edit, bool ResultReference, int iSeparateFile, bool ExportRelatedAllLBCs, bool UseEntityName, bool MatrixSloverParam, int PreconditionType, int MatrixStructure, Cursor\[\] Target, int LoadType,bool SameOutputOnAllProcess, bool DeleteFloatingNode, bool BC, bool CheckBCDuplicate, bool AutoAssignDummyProp, Cursor crDummyPropMaterial, bool ReferenceRestartData, Cstring ReferenceRestartDataPath, int ReferenceRestartDataProcessNum, int ReferenceRestartDataStepNum, int ReferenceRestartDataCoordType, int ReferenceRestartDataUpdateContactSearch, LoadNodeData\[\] LoadData, int HeatConvection)
+
+## Inputs
+
+1.  Cstring
+
+    Name of ADVC Job
+
+2.  Cstring
+
+    Description of ADVC Job
+
+3.  int
+
+    Job type\[0:Structural; 1:Heat Transfer\]
+
+4.  Cursor\[\]
+
+    Advc process sequence
+
+5.  Cursor\[\]
+
+    Element location group
+
+6.  Cursor\[\]
+
+    Node location group
+
+7.  bool
+
+    Write group flag true = 1, false = 0
+
+8.  Cursor
+
+    Edit ADVC Job
+
+9.  bool
+
+    Result reference flag true = 1, flase = 0
+
+10. int
+
+    Separated file type\[0:None; 1:By Model; 2:By Body; 3:By Selected Body\]
+
+11. bool
+
+    Export all related LBCs flag true = 1, false = 0
+
+12. bool
+
+    Use entity name flag true = 1, false = 0
+
+13. bool
+
+    Define matrix solver parameter flag true = 1, false = 0
+
+14. int
+
+    Precondition type\[0:Scaling; 1:CGCG; 2:CGCG2; 3:CGCG2_Diag; 4:CGCG2-SOR\]
+
+15. int
+
+    Matrix structure \[0:Symmetry; 1:Asymmetry\]
+
+16. Cursor\[\]
+
+    Target list
+
+17. int
+
+    Load type \[0:Load Case; 1:Load\]
+
+18. bool
+
+    All outputs are same flag true = 1, false = 0
+
+19. bool
+
+    Delete floating node flag true = 1, false = 0
+
+20. bool
+
+    Boundary condition flag true = 1, false = 0
+
+21. bool
+
+    Check Boundary condition Duplicate flag true = 1, false = 0
+
+22. bool
+
+    Auto Assign Dummy Property
+
+23. Cursor
+
+    Dummy Property Material
+
+24. bool
+
+    Reference Restart Data flag true = 1, false = 0
+
+25. Cstring
+
+    Reference Restart Data Path
+
+26. int
+
+    Reference Restart Data Process Num
+
+27. int
+
+    Reference Restart Data Step Num
+
+28. int
+
+    Reference Restart Data Coord Type
+
+29. int
+
+    Reference Restart Data Update Contact Search
+
+30. LoadNodeData\[\]
+
+    LoadNodeData list
+
+31. LoadNodeData
+
+    (Cursor data, Cursor modify, int flag, double contactInterference, bool shrink, int Stabilized, double residualFactor, double EffectiveDist, int Type, double CN, double CT)
+
+32. int
+
+    Heat Convection
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+AdvcJob("ADVC", "", 1, \[128:2\], \[\], \[\], 0, 0:0, 0, 0, 0, 0, 0, 0, 0, \[3:1\], 1, 1, 1, 1, 0, 1, 22:2, 0, "", 2147483647, 2147483647, 0, 1, \[\], 1)

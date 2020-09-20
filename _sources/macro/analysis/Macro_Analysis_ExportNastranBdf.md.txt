@@ -1,0 +1,47 @@
+---
+lang: en
+title: ExportNastranBdf
+---
+
+ExportNastranBdf
+----------------
+
+## Description
+
+Export Nastran bdf file
+
+## Syntax
+
+ExportNastranBdf(String strPath, TCursor job, int modelCheckAnswer, int deleteSlaveNodesAnswer)
+
+## Inputs
+
+1.  String\[\]
+
+    bdf file path
+
+2.  double
+
+    job cursor
+
+3.  int
+
+    Model Check Answer
+
+4.  int
+
+    Delete Slave Nodes Answer
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+ExportNastranBdf("D:/ImportFile/NastranBdf.bdf", 147:2, 1, 0)

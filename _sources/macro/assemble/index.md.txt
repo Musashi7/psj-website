@@ -1,0 +1,16 @@
+# Assembly
+
+```{toctree}
+:maxdepth: 1
+
+Macro_Assemble_AddRib.md
+Macro_Assemble_ASMAssembleFace.md
+Macro_Assemble_ASMSeparateAll2.md
+Macro_Assemble_ASMSeparateShell.md
+Macro_Assemble_ASMSeparateSolid.md
+Macro_Assemble_Assemble_Faces.md
+Macro_Assemble_Assemble_Faces_MatingStep.md
+Macro_Assemble_CreateSharedFace.md
+Macro_Assemble_CylinderLayer.md
+Macro_Assemble_SharedFaces.md
+```

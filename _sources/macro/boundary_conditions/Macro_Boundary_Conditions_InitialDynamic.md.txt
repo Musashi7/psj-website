@@ -1,0 +1,67 @@
+---
+lang: en
+title: InitialDynamic
+---
+
+InitialDynamic
+--------------
+
+#### Description
+
+Create Initial Condition
+
+#### Syntax
+
+InitialDynamic(CString m_strName,int m_Type,double\[\] fVel,BOOL bSelNodeSet,Cursor crNodeSet,Cursor crTable,Cursor curCoord,Cursor\[\] m_taTarget,Cursor m_crEdit)
+
+#### Inputs
+
+1.  CString
+
+    Condition name
+
+2.  int
+
+    Condition Type\[0-displacement 1-velocity 2-rotation angle 3-angular velocity\]
+
+3.  double\[\]
+
+    Condition value
+
+4.  BOOL
+
+    selected node set
+
+5.  Cursor
+
+    selected node set cursor
+
+6.  Cursor
+
+    selected table cursor
+
+7.  Cursor
+
+    coordinate cursor
+
+8.  Cursor\[\]
+
+    selected entity
+
+9.  Cursor
+
+    edit mode
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+InitialDynamic("InitialAngularVelocity1", 3, \[1, 2, 3\], 0, 0:0, 0:0, 0:0, \[3:1\], 0:0)

@@ -1,0 +1,29 @@
+---
+lang: en
+title: ViewShowFreeEdge
+---
+
+ViewShowFreeEdge
+----------------
+
+#### Description
+
+Turn ON/OFF Show Free Edge
+
+#### Syntax
+
+ViewShowFreeEdge(bool Flag)
+
+#### Inputs
+
+1.  bool
+
+    Turn on/off display switch 0=On 1=OFF
+
+#### Return Code
+
+Nothing
+
+#### Sample Code
+
+ViewShowFreeEdge(0)

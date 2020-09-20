@@ -1,0 +1,19 @@
+# Tool Menu
+
+Perform operations related to the creation of dialogs and wizards.
+
+![](./../_images/GUI_CommandBuilder_MenuWindow_ToolMenu.png)
+
+## Tool Menu details
+
+|                   Icon                   | Name                             | Description                                                  	     | Shortcut Key |
+| :--------------------------------------: | :------------------------------- | :----------------------------------------------------------- 		 | :----------: |
+| ![](./../_images/ToolMenu_icon/New.png)       | Make a new dialog                | Clear the being created settings and open a new environment  		 |    {badge}`F5,badge-dark badge-pill`    |
+| ![](./../_images/ToolMenu_icon/Open.png)      | Open an existing database        | Open and load a database file                                		 |    {badge}`F4,badge-dark badge-pill`    |
+| ![](./../_images/ToolMenu_icon/Save.png)      | Save dialog settings to database | Save the being created dialoge settings to an external database file |    {badge}`F6,badge-dark badge-pill`    |
+| ![](./../_images/ToolMenu_icon/Undo.png)      | Undo                             | Click this icon to undo the previously executed operation    		 |              |
+| ![](./../_images/ToolMenu_icon/Redo.png)      | Redo                             | Click this icon to redo the previously cancelled operation   		 |              |
+| ![](./../_images/ToolMenu_icon/Show_hide.png) | Show or hide code window         | Switch showing or hiding the code window                     		 |    {badge}`F1,badge-dark badge-pill`    |
+| ![](./../_images/ToolMenu_icon/Preview.png)   | Preview dialog                   | Display a preview of the being created dialog                		 |    {badge}`F2,badge-dark badge-pill`    |
+| ![](./../_images/ToolMenu_icon/Integrate.png) | Integrate                        | Save dialog to customer folder and display it in Jupiter's ribbon    |    {badge}`F3,badge-dark badge-pill`    |
+| ![](./../_images/ToolMenu_icon/Help.png)      | Help                             | Display a short tutorial (being created)                     		 |              |

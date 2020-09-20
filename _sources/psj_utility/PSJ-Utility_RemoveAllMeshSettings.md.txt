@@ -1,0 +1,31 @@
+# RemoveAllMeshSettings
+
+## Description
+
+Remove all local mesh setting
+
+## Syntax
+
+RemoveAllMeshSettings()
+
+## Inputs
+
+1. None
+
+No input value
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+
+```python
+JPT.RemoveAllMeshSettings()
+```
+
+*Output:*

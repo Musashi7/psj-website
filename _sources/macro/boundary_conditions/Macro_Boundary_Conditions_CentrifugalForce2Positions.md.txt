@@ -1,0 +1,83 @@
+---
+lang: en
+title: CentrifugalForce2Positions
+---
+
+CentrifugalForce2Positions
+--------------------------
+
+#### Description
+
+create centrifugal force by 2 positions
+
+#### Syntax
+
+CentrifugalForce2Positions(String m_strName,double fBasePoint\[0\],double fBasePoint\[1\],double fBasePoint\[2\],double fTipPoint\[0\],double fTipPoint\[1\],double fTipPoint\[2\],double fVelocity,double fAcceleration,int iVelocityUnit,int iAccelerationUnit,Cursor\[\] m_taTarget,Cursor m_crEdit)
+
+#### Inputs
+
+1.  String
+
+    name of centrifugal force
+
+2.  double
+
+    base point x
+
+3.  double
+
+    base point y
+
+4.  double
+
+    base point z
+
+5.  double
+
+    tip point x
+
+6.  double
+
+    tip point y
+
+7.  double
+
+    tip point z
+
+8.  double
+
+    rotational velocity
+
+9.  double
+
+    rotational acceleration
+
+10. int
+
+    unit of velocity
+
+11. int
+
+    unit of acceleration
+
+12. Cursor\[\]
+
+    targets
+
+13. Cursor
+
+    edit cursor
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+CentrifugalForce2Positions("CentrifugalForce1", 0.01, 0.0022222, 0.01, 0.01, 0.0044444, 0.01, 0.174533, 0.0872665, 0, 0, \[3:1, 10:82, 10:84\], 0:0)

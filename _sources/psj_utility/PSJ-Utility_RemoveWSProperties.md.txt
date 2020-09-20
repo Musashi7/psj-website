@@ -1,0 +1,31 @@
+# RemoveWSProperties
+
+## Description
+
+Remove all properties in models
+
+## Syntax
+
+RemoveWSProperties()
+
+## Inputs
+
+1. None
+
+ No input value
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+
+```python
+JPT.RemoveWSProperties()
+```
+
+*Output:*

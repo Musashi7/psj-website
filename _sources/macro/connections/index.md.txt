@@ -1,0 +1,28 @@
+# Connections
+
+```{toctree}
+:maxdepth: 1
+
+Macro_Connections_Bush.md
+Macro_Connections_ConnectGap.md
+Macro_Connections_Connector.md
+Macro_Connections_ContactAbaqus.md
+Macro_Connections_ContactADVC.md
+Macro_Connections_ContactClearance.md
+Macro_Connections_ContactMSCNastran.md
+Macro_Connections_ContactNXNastran.md
+Macro_Connections_Lbc_Bolt_Modeling_Type_A_Edge.md
+Macro_Connections_Lbc_Bolt_Modeling_Type_A_Face.md
+Macro_Connections_Lbc_Bolt_Modeling_Type_B_Edge.md
+Macro_Connections_Lbc_Bolt_Modeling_Type_B_Face.md
+Macro_Connections_Lbc_Bolt_Modeling_Type_C_Edge.md
+Macro_Connections_Lbc_Bolt_Modeling_Type_C_Face.md
+Macro_Connections_Lbc_Bolt_Modeling_Type_D.md
+Macro_Connections_Mpc.md
+Macro_Connections_Pretension.md
+Macro_Connections_PretensionAbaqus.md
+Macro_Connections_Property1DPlot.md
+Macro_Connections_Rbe2.md
+Macro_Connections_Rbe3.md
+Macro_Connections_Spring.md
+```

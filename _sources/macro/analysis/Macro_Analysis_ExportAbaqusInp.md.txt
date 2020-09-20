@@ -1,0 +1,43 @@
+---
+lang: en
+title: ExportAbaqusInp
+---
+
+ExportAbaqusInp
+---------------
+
+## Description
+
+Export Abaqus Inp
+
+## Syntax
+
+ExportAbaqusInp(Cursor m_crAbaJob,Cursor\[\] m_taSelectBody,CString strPath)
+
+## Inputs
+
+1.  Cursor
+
+    Abaqus Job Cursor
+
+2.  Cursor\[\]
+
+    Select Body Cursors to output
+
+3.  CString
+
+    output directory for INP
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+ExportAbaqusInp(143:2, \[\], "D:/ImportFile/Abaqus.inp")

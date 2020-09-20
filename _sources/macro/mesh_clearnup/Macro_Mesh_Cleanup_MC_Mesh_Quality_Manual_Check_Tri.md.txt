@@ -1,0 +1,77 @@
+---
+lang: en
+title: MC_Mesh_Quality_Manual_Check_Tri
+---
+
+MC_Mesh_Quality_Manual_Check_Tri
+--------------------------------
+
+#### Description
+
+Mesh_Quality_Manual_Check_Tri
+
+#### Syntax
+
+MC_Mesh_Quality_Manual_Check_Tri(cursor\[\] crEntities, int iElemType, int iCond, double dDispValue)
+
+#### Inputs
+
+1.  Cursor\[\]
+
+    Target entity cursor(\[CursorType: CursorType ID\])
+
+2.  Int
+
+    Element quality metric type\*
+
+    \*0: Stretch
+
+     1: Aspect Ratio
+
+     2: Edge Length
+
+     3: Area
+
+     4: Node Valence
+
+     5: Interior angle
+
+     6: Duplicate Elements
+
+     7: Node free edges
+
+3.  Int
+
+    Condition Display
+
+    \*0: \<=
+
+     1: \>=
+
+     2: \<
+
+     3: \>
+
+4.  double
+
+    Display value
+
+#### Return Code
+
+It returns a string separated by commas contains 6 values.
+
+1.  Succeeded:1 Failed: 0
+
+2.  Final Min Value displayed in dialog
+
+3.  Final Max Value displayed in dialog
+
+4.  Final AVG Value displayed in dialog
+
+5.  Total number of entities calculated
+
+6.  Number of failed elements within limit value
+
+#### Sample Code
+
+MC_Mesh_Quality_Manual_Check_Tri(\[3:1\], 0, 0, 0.1)

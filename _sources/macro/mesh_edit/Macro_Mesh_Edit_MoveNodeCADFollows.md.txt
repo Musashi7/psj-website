@@ -1,0 +1,47 @@
+---
+lang: en
+title: MoveNodeCADFollows
+---
+
+MoveNodeCADFollows
+------------------
+
+#### Description
+
+Move node to mouse drag position
+
+#### Syntax
+
+MoveNodeCADFollows(Cursor\[\] node, double x, double y, double z)
+
+#### Inputs
+
+1.  Cursor\[\]
+
+    List with the nodes to move
+
+2.  double
+
+    x: 1st coordinate of the point where to move the node.
+
+3.  double
+
+    y: 2nd coordinate of the point where to move the node.
+
+4.  double
+
+    z: 3rd coordinate of the point where to move the node.
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+MoveNodeCADFollows(\[10:1992\], 0.00523353, 0.01, 0.00789714)

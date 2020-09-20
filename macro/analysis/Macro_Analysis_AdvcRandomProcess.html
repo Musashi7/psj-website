@@ -1,0 +1,1349 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>AdvcRandomProcess &#8212; Python Scritping in Jupiter  documentation</title>
+    <link rel="stylesheet" href="../../_static/material.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheets/amplify.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/spanels-index--0afa1ebdab0bb23b98b56d34c23d9f57.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/spanels-bootstrap-index--5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/spanels-variables--ffc7f74dcb1b9eecba2dbcbc22818714.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="AdvcSpectrumProcess" href="Macro_Analysis_AdvcSpectrumProcess.html" />
+    <link rel="prev" title="AdvcModalFreqRespProcess" href="Macro_Analysis_AdvcModalFreqRespProcess.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=002b54 data-md-color-accent=002b54>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#macro/analysis/Macro_Analysis_AdvcRandomProcess" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../index.html" title="Python Scritping in Jupiter  documentation"
+           class="md-header-nav__button md-logo">
+          
+              <img src="../../_static/logo.png" height="26"
+                   alt="Help &amp; Documentation logo">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Python Scripting in Jupiter</span>
+          <span class="md-header-nav__topic"> AdvcRandomProcess </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../../search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../../"versions.json"",
+        target_loc = "../../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../../index.html" class="md-tabs__link">Help & Documentation</a></li>
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Macro</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">Analysis</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../index.html" title="Python Scritping in Jupiter documentation" class="md-nav__button md-logo">
+      
+        <img src="../../_static/logo.png" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../../index.html"
+       title="Python Scritping in Jupiter documentation">Python Scripting in Jupiter</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="../../what_new.html" class="md-nav__link">What’s new</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../tutorials/index.html" class="md-nav__link">Tutorials</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../data_type/index.html" class="md-nav__link">Data Type</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../index.html" class="md-nav__link">Macro</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="../ac_modeling/index.html" class="md-nav__link">AC Modeling</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html" class="md-nav__link">Analysis</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcCreepProcess.html" class="md-nav__link">AdvcCreepProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcDynamicExplicitProcess.html" class="md-nav__link">AdvcDynamicExplicitProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcDynamicProcess.html" class="md-nav__link">AdvcDynamicProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcEigenProcess.html" class="md-nav__link">AdvcEigenProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcFatigueProcess.html" class="md-nav__link">AdvcFatigueProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcFatigueProcess.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcFatigueProcess.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcFatigueProcess.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcFatigueProcess.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcFatigueProcess.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcJob.html" class="md-nav__link">AdvcJob</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcJob.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcJob.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcJob.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcJob.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcJob.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcModalFreqRespProcess.html" class="md-nav__link">AdvcModalFreqRespProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcModalFreqRespProcess.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcModalFreqRespProcess.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcModalFreqRespProcess.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcModalFreqRespProcess.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcModalFreqRespProcess.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> AdvcRandomProcess </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">AdvcRandomProcess</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#macro-analysis-macro-analysis-advcrandomprocess--page-root" class="md-nav__link">AdvcRandomProcess</a>
+        </li>
+        <li class="md-nav__item"><a href="#description" class="md-nav__link">Description</a>
+        </li>
+        <li class="md-nav__item"><a href="#syntax" class="md-nav__link">Syntax</a>
+        </li>
+        <li class="md-nav__item"><a href="#inputs" class="md-nav__link">Inputs</a>
+        </li>
+        <li class="md-nav__item"><a href="#return-code" class="md-nav__link">Return Code</a>
+        </li>
+        <li class="md-nav__item"><a href="#sample-code" class="md-nav__link">Sample Code</a>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../../_sources/macro/analysis/Macro_Analysis_AdvcRandomProcess.md.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSpectrumProcess.html" class="md-nav__link">AdvcSpectrumProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSpectrumProcess.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSpectrumProcess.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSpectrumProcess.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSpectrumProcess.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSpectrumProcess.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSSHProcess.html" class="md-nav__link">AdvcSSHProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSSHProcess.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSSHProcess.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSSHProcess.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSSHProcess.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcSSHProcess.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcStaticProcess.html" class="md-nav__link">AdvcStaticProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcStaticProcess.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcStaticProcess.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcStaticProcess.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcStaticProcess.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcStaticProcess.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcTHProcess.html" class="md-nav__link">AdvcTHProcess</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcTHProcess.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcTHProcess.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcTHProcess.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcTHProcess.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_AdvcTHProcess.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAbaqusJob.html" class="md-nav__link">CreateAbaqusJob</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAbaqusJob.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAbaqusJob.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAbaqusJob.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAbaqusJob.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAbaqusJob.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAnsysJob.html" class="md-nav__link">CreateAnsysJob</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAnsysJob.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAnsysJob.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAnsysJob.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAnsysJob.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_CreateAnsysJob.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_DynamisJob.html" class="md-nav__link">DynamisJob</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_DynamisJob.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_DynamisJob.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_DynamisJob.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_DynamisJob.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_DynamisJob.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAbaqusInp.html" class="md-nav__link">ExportAbaqusInp</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAbaqusInp.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAbaqusInp.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAbaqusInp.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAbaqusInp.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAbaqusInp.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAdx.html" class="md-nav__link">ExportAdx</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAdx.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAdx.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAdx.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAdx.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAdx.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAnsys.html" class="md-nav__link">ExportAnsys</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAnsys.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAnsys.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAnsys.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAnsys.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportAnsys.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportDynamisBdf.html" class="md-nav__link">ExportDynamisBdf</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportDynamisBdf.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportDynamisBdf.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportDynamisBdf.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportDynamisBdf.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportDynamisBdf.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportNastranBdf.html" class="md-nav__link">ExportNastranBdf</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportNastranBdf.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportNastranBdf.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportNastranBdf.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportNastranBdf.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_ExportNastranBdf.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_NastranJob.html" class="md-nav__link">NastranJob</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_NastranJob.html#description" class="md-nav__link">Description</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_NastranJob.html#syntax" class="md-nav__link">Syntax</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_NastranJob.html#inputs" class="md-nav__link">Inputs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_NastranJob.html#return-code" class="md-nav__link">Return Code</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="Macro_Analysis_NastranJob.html#sample-code" class="md-nav__link">Sample Code</a>
+      
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../assemble/index.html" class="md-nav__link">Assembly</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../boundary_conditions/index.html" class="md-nav__link">Boundary Conditions</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../connections/index.html" class="md-nav__link">Connections</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../designer/index.html" class="md-nav__link">Designer</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../geometry/index.html" class="md-nav__link">Geometry</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../hex_modeling/index.html" class="md-nav__link">Hext Modeling</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../home/index.html" class="md-nav__link">Mesh Cleanup</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../mesh_clearnup/index.html" class="md-nav__link">Macro</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../mesh_edit/index.html" class="md-nav__link">Mesh Edit</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../meshing/index.html" class="md-nav__link">Meshing</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../midplane/index.html" class="md-nav__link">Midplane</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../properties/index.html" class="md-nav__link">Properties</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../tools/index.html" class="md-nav__link">Tools</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../utility/index.html" class="md-nav__link">Utility</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../view_control/index.html" class="md-nav__link">View Control</a>
+      
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../psj_utility/index.html" class="md-nav__link">PSJ-Utility</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../PythonAPIWindow.html" class="md-nav__link">Python API Window</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../ide/index.html" class="md-nav__link">IDE</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../file_launcher.html" class="md-nav__link">File Launcher</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../../gui_command_builder/index.html" class="md-nav__link">GUI Command Builder</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#macro-analysis-macro-analysis-advcrandomprocess--page-root" class="md-nav__link">AdvcRandomProcess</a>
+        </li>
+        <li class="md-nav__item"><a href="#description" class="md-nav__link">Description</a>
+        </li>
+        <li class="md-nav__item"><a href="#syntax" class="md-nav__link">Syntax</a>
+        </li>
+        <li class="md-nav__item"><a href="#inputs" class="md-nav__link">Inputs</a>
+        </li>
+        <li class="md-nav__item"><a href="#return-code" class="md-nav__link">Return Code</a>
+        </li>
+        <li class="md-nav__item"><a href="#sample-code" class="md-nav__link">Sample Code</a>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../../_sources/macro/analysis/Macro_Analysis_AdvcRandomProcess.md.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  
+<h1 id="macro-analysis-macro-analysis-advcrandomprocess--page-root">AdvcRandomProcess<a class="headerlink" href="#macro-analysis-macro-analysis-advcrandomprocess--page-root" title="Permalink to this headline">¶</a></h1>
+
+
+<h1 id="description">Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h1>
+<p>create advc random response process</p>
+
+
+<h1 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h1>
+<p>AdvcRandomProcess(String m_strName,string strRefEigenDir,double dRefLowFreq,double dRefHighFreq,Cursor crModalDampingRatio,Cursor crExcitationFreq,bool bAutoFreqInterval,double dMaxFreq,double dMinFreq,int iNumFreqPoint,double dBiasParam,int iPropMethod,int iPSDtype,int iPSDdir,Cursor crPSDLoad,double dPSDFactor,double dGravityAccel,int iOutputEigenFreqStep,Cursor m_crEdit,List m_LoadNodeList,List m_LoadCaseNodeList,List m_LoadNodeContactList,List m_OutputParamList,int m_iRefType,String m_strRefPath,List m_ReferenceResultList)</p>
+
+
+<h1 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h1>
+<p>String</p>
+<p>name of advc random response process</p>
+<p>string</p>
+<p>the path of result file</p>
+<p>double</p>
+<p>refer low frequency</p>
+<p>double</p>
+<p>refer high frequency</p>
+<p>Cursor</p>
+<p>modal damping ratio</p>
+<p>Cursor</p>
+<p>Excitation Frequencies</p>
+<p>bool</p>
+<p>if auto frequency interval</p>
+<p>double</p>
+<p>Max Frequency</p>
+<p>double</p>
+<p>Min Frequency</p>
+<p>int</p>
+<p>Number Frequency Point</p>
+<p>double</p>
+<p>Bias Parameter</p>
+<p>int</p>
+<p>MultiPointExcitation_Correlation[0:Uncorrelated; 1:Correlated]</p>
+<p>int</p>
+<p>PSD type[0:Displacement; 1:Velocity; 2:Acceleration]</p>
+<p>int</p>
+<p>PSD direction[0:X; 1:Y; 2:Z; 3:RX; 4:RY; 5:RZ]</p>
+<p>Cursor</p>
+<p>PSD Load</p>
+<p>double</p>
+<p>PSD Amplitude_Scale_Factor</p>
+<p>double</p>
+<p>Gravity Acceleration</p>
+<p>int</p>
+<p>Output Frequency Step[-1:default; 0:No; 1:Yes]</p>
+<p>Cursor</p>
+<p>edit cursor</p>
+<p>List</p>
+<p>status of Loads</p>
+<p>List</p>
+<p>status of Load Cases</p>
+<p>List</p>
+<p>status and other data of Contacts</p>
+<p>List</p>
+<p>output parameters</p>
+<p>int</p>
+<p>reference result type[0:Temperature Load; 1:Stress]</p>
+<p>String</p>
+<p>path of reference result</p>
+<p>List</p>
+<p>data of reference result</p>
+
+
+<h1 id="return-code">Return Code<a class="headerlink" href="#return-code" title="Permalink to this headline">¶</a></h1>
+<p>1</p>
+<p>Succeeded</p>
+<p>0</p>
+<p>Failed</p>
+
+
+<h1 id="sample-code">Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h1>
+<p>AdvcRandomProcess(“Test”,,0.001,0.001,1:11,1:11,1,0.001,0.001,1,0.001,1,1,1,1:11,0.001,0.001,1,1:11,,,,,1,”Test”,)</p>
+
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./macro\analysis"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="Macro_Analysis_AdvcModalFreqRespProcess.html" title="AdvcModalFreqRespProcess"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> AdvcModalFreqRespProcess </span>
+              </div>
+            </a>
+          
+          
+            <a href="Macro_Analysis_AdvcSpectrumProcess.html" title="AdvcSpectrumProcess"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> AdvcSpectrumProcess </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2020, TechnoStar Co. Ltd.
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ <script src="../../_static/javascripts/application.js"></script>
+ <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+ <script src="../../_static/javascript/amplify.js" defer></script>
+  </body>
+</html>

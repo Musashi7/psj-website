@@ -1,0 +1,15 @@
+# GUI Command Builder
+
+GUI Command Builder is an interactive builder of JDG, help making Jupiter dialog or wizard by drag and drop operations. User hence does not need to know Python programming language to make UI components in Jupiter.
+
+![](./../_images/GUI_CommandBuilder_Component-Parameter_Layout.png)
+
+```{toctree}
+:maxdepth: 1
+
+GUI_CommandBuilder_MenuWindow_1_ToolMenu
+GUI_CommandBuilder_MenuWindow_2_ToolBox
+GUI_CommandBuilder_MenuWindow_3_Hierarchy
+GUI_CommandBuilder_MenuWindow_4_Properties
+component/index
+```

@@ -1,0 +1,79 @@
+---
+lang: en
+title: Geom_FindFeatures
+---
+
+Geom_FindFeatures
+-----------------
+
+## Description
+
+Face/Edge selected of grouped by its feature
+
+## Syntax
+
+Geom_FindFeatures(int taItems, int nType, int nOption, TKey taEdgeItems, int bCylinder, bool bDisc, bool bFourCorners, double dMinThickness, double dMaxThickness, double dDiameterMin, double dDiameterMax, TKey taFaceItems)
+
+## Inputs
+
+1.  int\[\]
+
+    Items ID
+
+2.  int
+
+    If Type == 1 find faces, if type == 2 find edges
+
+3.  int
+
+    Option
+
+4.  int\[\]
+
+    Edge ID
+
+5.  bool
+
+    Cylinder flag true = 1, false = 0
+
+6.  bool
+
+    Disc flag true = 1, false = 0
+
+7.  bool
+
+    Four corners flag true = 1, false = 0
+
+8.  double
+
+    Min thickness value
+
+9.  double
+
+    Max thickness value
+
+10. double
+
+    Min Diameter value
+
+11. double
+
+    Max diameter value
+
+12. int\[\]
+
+    Face ID
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+Geom_FindFeatures(\[1\], 1, 0, \[\], 1, 0, 1, 0.1, 2, 1, 2, \[\])

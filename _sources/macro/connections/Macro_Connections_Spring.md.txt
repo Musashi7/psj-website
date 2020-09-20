@@ -1,0 +1,99 @@
+---
+lang: en
+title: Spring
+---
+
+Spring
+------
+
+## Description
+
+Create spring connection
+
+## Syntax
+
+Spring(int method, String name, Cursor\[\] master, Cursor\[\] slave,Cursor coord, int springType, int ground, double tol, int dir, int distMode, int dof1, int dof2, double dampCoef, double stressCoef, double\[3\] transStiffness, double\[3\] rotStiffness, Cursor editObj )
+
+## Inputs
+
+1.  int
+
+    method to create spring, 17: any entities(1:1)
+
+2.  String
+
+    name of spring
+
+3.  Cursor\[\]
+
+    master entities of spring
+
+4.  Cursor\[\]
+
+    master entities of spring
+
+5.  Cursor
+
+    referred coordinate system, NULL is global
+
+6.  int
+
+    type of spring, 0: general, 1: DoF, 2: uniform DoF
+
+7.  int
+
+    ground or not, 0: no, 1: yes
+
+8.  double
+
+    tolerance to find node pair
+
+9.  int
+
+    direction of spring, 0: isotropic, 1: anisotropic
+
+10. int
+
+    distribute mode, not used
+
+11. int
+
+    DoF at reference
+
+12. int
+
+    DoF at target
+
+13. double
+
+    Damping coef.
+
+14. double
+
+    Stress coef.
+
+15. double\[3\]
+
+    stiffness
+
+16. double\[3\]
+
+    Rotate stiffness
+
+17. Cursor
+
+    used for edit mode
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+Spring(17, "Spring_1", \[5:66316\], \[5:66299\], 0:0, 2, 0, 0, 0, 0, 0, 0, 1.2, 1.5, \[1000, 2000, 1000\], \[1.7976931e+308, 1.7976931e+308, 1.7976931e+308\], 1, 0:0)

@@ -1,0 +1,39 @@
+---
+lang: en
+title: ImportGeomBDF
+---
+
+ImportGeomBDF
+-------------
+
+## Description
+
+Import Geometry bdf file
+
+## Syntax
+
+ImportGeomBDF(string\[\] vecPath, bool use_unit)
+
+## Inputs
+
+1.  String\[\]
+
+    Path directory
+
+2.  Bool
+
+    Use unit True = 1, False = 0
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+ImportGeomBDF(\["C:\\Users\\TechnoStar\\Desktop\\test.bdf"\], 1)

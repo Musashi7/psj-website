@@ -1,0 +1,34 @@
+# Character input
+
+## Highlight
+
+![](./../_images/IDE_Highlighting.png)
+
+When user double-clicks a word, the same word is highlighted (yellow).  
+The highlighted data is stored in the database folder.
+
+## Auto completion
+
+![](./../_images/IDE_Completion.png)
+
+Supports auto-completion. For example, if user types "Geometry.Sol"", a list box will appear and show words that start with "Sol".  
+The auto-completion data is stored in the database folder.
+
+This function supports the following:
+
+-   All words in the IDE
+-   Python keywords
+-   PSJ-Utility
+
+## Tooltip
+
+![](./../_images/IDE_Calltips1.png)
+
+Supports tooltips. For example, if user enters "JPT.ClearLog(", a tooltip showing the JPT.ClearLog document is displayed.  
+Tooltip data is stored in the database folder.
+
+## User-defined function tooltip
+
+![](./../_images/IDE_Calltips2.png)
+
+It also supports user functions. 

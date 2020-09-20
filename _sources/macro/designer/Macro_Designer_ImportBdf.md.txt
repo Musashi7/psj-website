@@ -1,0 +1,47 @@
+---
+lang: en
+title: ImportBdf
+---
+
+ImportBdf
+---------
+
+## Description
+
+Import Nastran bdf file
+
+## Syntax
+
+ImportBdf(String\[\] vecPath, int importType, double faceAngle, double edgeAngle)
+
+## Inputs
+
+1.  String\[\]
+
+    multiple bdf file paths
+
+2.  int
+
+    import type
+
+3.  double
+
+    face angle (radian)
+
+4.  double
+
+    edge angle (radian)
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+ImportBdf(\["C:\\Users\\TechnoStar\\Desktop\\test.bdf"\], 2, 1.0472, 1.0472)

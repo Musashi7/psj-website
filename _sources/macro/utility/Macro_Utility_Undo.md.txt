@@ -1,0 +1,35 @@
+---
+lang: en
+title: Undo
+---
+
+Undo
+----
+
+## Description
+
+cancel the operation
+
+## Syntax
+
+Undo(int iUndoTimes)
+
+## Inputs
+
+1.  Int
+
+    Undo times
+
+## Return Code
+
+Nothing
+
+Succeeded
+
+Nothing
+
+Failed
+
+## Sample Code
+
+Undo(1)

@@ -1,0 +1,38 @@
+---
+lang: en
+title: CloseGaps
+---
+
+CloseGaps
+---------
+
+#### Description
+
+Close small Gaps
+
+#### Syntax
+
+CloseGaps(cursor\[\] taBodyCur, double dDistanceTol)
+
+#### Inputs
+
+1.  Cursor\[\]
+    Target part cursor(\[3:Part ID\])
+
+2.  Double
+
+    Close gap distance tolerance
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+CloseGaps(\[3:1\], 0.0001)

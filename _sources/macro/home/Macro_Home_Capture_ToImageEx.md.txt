@@ -1,0 +1,55 @@
+---
+lang: en
+title: Capture_ToImageEx
+---
+
+Capture_ToImageEx
+-----------------
+
+## Description
+
+Capture to Image File.
+
+## Syntax
+
+Capture_ToImageEx(Cstring strNamePath, bool WhiteBG, bool TransparentBG, bool FixedSize, int exportWidth, int exportHeight)
+
+## Inputs
+
+1.  Cstring
+
+    Import file path
+
+2.  Bool
+
+    White background bool flag true = 1, false = 0
+
+3.  Bool
+
+    Transparent background flag true = 1, false = 0
+
+4.  Bool
+
+    Fixed Size flag true = 1, false = 0
+
+5.  Int
+
+    Export Width
+
+6.  Int
+
+    Export Height
+
+## Return Code
+
+TRUE
+
+Succeeded
+
+FALSE
+
+Failed
+
+## Sample Code
+
+Capture_ToImageEx("D:/Test.jpg", 0, 0, 0, 1200, 900)

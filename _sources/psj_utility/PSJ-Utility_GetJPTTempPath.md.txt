@@ -1,0 +1,36 @@
+# GetJPTTempPath
+
+## Description
+
+Get temporary document path
+
+## Syntax
+
+GetJPTTempPath()
+
+## Inputs
+
+1. None
+
+No input value
+
+## Return Code
+
+*Python Output*
+
+- String
+
+Temp Document Path
+
+## Sample Code
+
+*Input:*
+
+```python
+path=JPT.GetJPTTempPath()
+print(str(path))
+```
+
+*Output:*
+
+\> `C:\Users\TECHNOSTAR\AppData\Local\Temp\TechnoStar\`

@@ -1,0 +1,39 @@
+---
+lang: en
+title: SaveDB
+---
+
+SaveDB
+------
+
+## Description
+
+Save Current Document
+
+## Syntax
+
+SaveDB(string strPath, string strHistoryTree)
+
+## Inputs
+
+1.  String
+
+    directory path name
+
+2.  String
+
+    History tree
+
+## Return Code
+
+Nothing
+
+Succeeded
+
+Nothing
+
+Failed
+
+## Sample Code
+
+SaveDB("D:/ImportFile/Test.jtdb", "")

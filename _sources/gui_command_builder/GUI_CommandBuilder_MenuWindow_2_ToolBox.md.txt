@@ -1,0 +1,30 @@
+# Tool Box Window
+
+Contain all the components used to create dialogs and wizards.
+
+![](./../_images/GUI_CommandBuilder_MenuWindow_ToolBox.png)
+
+## Tool Box Window details
+
+|                     Icon                      | Name              | Description                                                  |
+| :-------------------------------------------: | :---------------- | :----------------------------------------------------------- |
+|     ![](./../_images/ToolBox_icon/Layout.png)      | Layout            | Create a layout to arrange components inside                 |
+|    ![](./../_images/ToolBox_icon/GroupBox.png)     | Group Box         | Create a group box which can contain some components         |
+|   ![](./../_images/ToolBox_icon/TabControl.png)    | Tab Control       | Create a tab container                                       |
+|     ![](./../_images/ToolBox_icon/TabItem.png)     | Tab Item          | Create a tab inside the tab container                        |
+|      ![](./../_images/ToolBox_icon/Label.png)      | Label             | Create a label                                               |
+|     ![](./../_images/ToolBox_icon/TextBox.png)     | Text Box          | Create a text box                                            |
+| ![](./../_images/ToolBox_icon/RichEditControl.png) | Rich Edit Control | Create a text box that can be entered in various data formats and multiple lines |
+|    ![](./../_images/ToolBox_icon/ComboBox.png)     | Combo Box         | Create a combo box                                           |
+|     ![](./../_images/ToolBox_icon/Listbox.png)     | List Box          | Create a list box                                            |
+|    ![](./../_images/ToolBox_icon/Checkbox.png)     | Check Box         | Create a check box                                           |
+|   ![](./../_images/ToolBox_icon/RadioButton.png)   | Radio Button      | Create a radio button                                        |
+|     ![](./../_images/ToolBox_icon/Button.png)      | Button            | Create a button                                              |
+|  ![](./../_images/ToolBox_icon/ImageControl.png)   | Image Control     | Create an image container                                    |
+|      ![](./../_images/ToolBox_icon/Spin.png)       | Spin              | Create a spin button                                         |
+|    ![](./../_images/ToolBox_icon/SliderBar.png)    | Slider Bar        | Create a slide bar                                           |
+|    ![](./../_images/ToolBox_icon/Separator.png)    | Separator         | Create a  separator line                                     |
+| ![](./../_images/ToolBox_icon/OpenFileFolder.png)  | Open File/Folder  | Create a open file/folder selection                          |
+|      ![](./../_images/ToolBox_icon/Table.png)      | Table             | Create a table                                               |
+|   ![](./../_images/ToolBox_icon/PageControl.png)   | Page Control      | Create a page container (used for wizard)                    |
+|    ![](./../_images/ToolBox_icon/PageItem.png)     | Page Item         | Create a page inside the page container (used for wizard)    |

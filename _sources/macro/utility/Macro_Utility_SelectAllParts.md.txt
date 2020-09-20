@@ -1,0 +1,35 @@
+---
+lang: en
+title: SelectAllParts
+---
+
+SelectAllParts
+--------------
+
+## Description
+
+Select all of the parts in the model
+
+## Syntax
+
+SelectAllParts()
+
+## Inputs
+
+1.  NONE
+
+    NONE
+
+## Return Code
+
+The found cursor\[\*:\*,\*:\*\]
+
+Succeeded
+
+FAILED
+
+Failed
+
+## Sample Code
+
+SelectAllParts()

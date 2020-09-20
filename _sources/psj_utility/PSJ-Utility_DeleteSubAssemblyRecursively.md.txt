@@ -1,0 +1,32 @@
+# DeleteSubAssemblyRecursively
+
+## Description
+
+Delete an indicated sub assembly and all the items inside the sub assembly safely.
+
+## Syntax
+
+JPT.DeleteSubAssemblyRecursively(DItem subAssembly)
+
+## Inputs
+
+1. DItem
+
+Target sub assembly.
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+
+```python
+SubAsm=JPT.FindSubAssemblyByID(1)
+JPT.JPT.DeleteSubAssemblyRecursively(SubAsm)
+```
+
+*Output:*

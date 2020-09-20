@@ -1,0 +1,47 @@
+---
+lang: en
+title: ASMSeparateShell
+---
+
+ASMSeparateShell
+----------------
+
+## Description
+
+Separate assembled faces in a shell model
+
+## Syntax
+
+ASMSeparateShell(int iType, int\[\] taKeyEntity, bool bCreateGroup)
+
+## Inputs
+
+1.  Int
+
+    Type option\*
+
+    \*1: Parts
+
+     2: Edges
+
+2.  int\[\]
+
+    Entity cursor(\[Entity ID\]) -\> depend on Picked Type
+
+3.  Bool
+
+    N/A: Create group
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+ASMSeparateShell(1, \[4, 1\], 0)

@@ -1,0 +1,47 @@
+---
+lang: en
+title: HexAutoSweep
+---
+
+HexAutoSweep
+------------
+
+#### Description
+
+Automatic hex mesh creator for parts if possible
+
+#### Syntax
+
+HexAutoSweep(int\[\] nPartIds, double dMeshSize, int nFlagForLayerMesh, int nLayers
+
+#### Inputs
+
+1.  int\[\]
+
+    nPartIds-specify the parts
+
+2.  double
+
+    Mesh Size
+
+3.  int
+
+    Flag for layer mesh (0-no layer mesh, 1-layer mesh)
+
+4.  int
+
+    Total Layers
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+HexAutoSweep(\[1\], 0.002, 1, 3)

@@ -1,0 +1,36 @@
+# GetUndoCount
+
+## Description
+
+Get number of undo action which is capable of running
+
+## Syntax
+
+GetUndoCount()
+
+## Inputs
+
+1. NONE
+
+No arguments
+
+## Return Code
+
+*Python Output*
+
+- int
+
+Number of undo action
+
+## Sample Code
+
+*Input:*
+
+```python
+undo = JPT.GetUndoCount()
+print(str(undo))
+```
+
+*Output:*
+
+\> `2`

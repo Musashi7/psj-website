@@ -1,0 +1,56 @@
+---
+lang: en
+title: Geom_ShowAdjacent
+---
+
+Geom_ShowAdjacent
+-----------------
+
+## Description
+
+Select face(s) then it results in the Adjacent faces with the given constraints
+
+## Syntax
+
+Geom_ShowAdjacent(double stopAngle,bool IncludeStopFace,int Layer,bool IsPreview,Cursor\[\] startFaceCursor, Cursor\[\] stopFaceCursor)
+
+## Inputs
+
+1.  double
+
+    Stop Angle value
+
+2.  bool
+
+    Value of whether stop face has to be included or not
+
+3.  int
+
+    number of Layers
+
+4.  bool
+
+    Whether the result is preview or Run
+
+5.  Cursor\[\]
+
+    List of Start faces cursor(\[6:Face ID\])
+
+6.  Cursor\[\]
+
+    List of Stop faces cursor(\[6:Face ID\])
+
+## Return Code
+
+1.  Succeeded:1 Failed: 0
+
+2.  List of adjacent faces
+
+## Sample Code
+
+import re  
+result=JPT.Exec('Geom_ShowAdjacent(90, 0, 4, 0, \[6:25\], \[\])')  
+splitted = re.split(r',\\s\*(?!\[\^(\\\[\\\]\]\*\\\])', result)  
+if splitted\[0\]!='0':  
+    for i in splitted:  
+        print(i)  

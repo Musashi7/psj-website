@@ -1,0 +1,63 @@
+---
+lang: en
+title: TemperatureLoad
+---
+
+TemperatureLoad
+---------------
+
+#### Description
+
+create temperature load
+
+#### Syntax
+
+TemperatureLoad(String m_strName,int nType,double fTemp,String strFilePathName,Cursor crTable,Cursor\[\] m_taTarget,Cursor m_crEdit,BOOL bUseAsMaterialReferenceTemp)
+
+#### Inputs
+
+1.  String
+
+    name of temperature load
+
+2.  int
+
+    type\[0:Constant; 1:Nastran Punch\]
+
+3.  double
+
+    value of temperature
+
+4.  String
+
+    file path
+
+5.  Cursor
+
+    select table
+
+6.  Cursor\[\]
+
+    targets
+
+7.  Cursor
+
+    edit cursor
+
+8.  BOOL
+
+    if use as material reference temperature
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+TemperatureLoad("Test",1,0.001,"Test",1:11,\[1:11,2:12\],1:11,1)

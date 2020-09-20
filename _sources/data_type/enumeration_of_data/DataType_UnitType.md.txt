@@ -1,0 +1,53 @@
+# Unit types
+
+An enumeration type that represents units.
+
+Function used:
+
+- [ConvertFromDocUnit](./../../psj_utility/PSJ-Utility_ConvertFromDocUnit.md)
+
+- [ConvertFromMacroUnit](./../../psj_utility/PSJ-Utility_ConvertFromMacroUnit.md)
+
+- [ConvertValueToDocUnit](./../../psj_utility/PSJ-Utility_ConvertValueToDocUnit.md)
+
+- [ConvertValueToMacroUnit](./../../psj_utility/PSJ-Utility_ConvertValueToMacroUnit.md)
+
+|Unit Type|Description|String Unit|
+|-|-|-|
+|`Unit_Length`|Length|$mm\\m\\ft\\in\\cm$|
+|`Unit_Time`|Time|$s\\min\\h$|
+|`Unit_Mass`|Mass|$t\\kg\\kgf*s^2/mm\\slug\\lbf*s^2/in\\lb\\g$|
+|`Unit_Force`|Force|$N\\mN\\kgf\\lbf\\tf$|
+|`Unit_Angle`|Angle|$deg\\rad$|
+|`Unit_Temperature`|Temperature|$K\\deg C\\deg F$|
+|`Unit_Area`|Area|$mm^2\\m^2\\ft^2\\in^2\\cm^2$|
+|`Unit_Volume`|Volume|$mm^3\\m^3\\ft^3\\in^3\\cm^3$|
+|`Unit_Velocity`|Velocity|$mm/s\\m/s\\ft/s\\in/s$|
+|`Unit_Acceleration`|Acceleration|$mm/s^2\\m/s^2\\ft/s^2\\in/s^2\\g\\Gal$|
+|`Unit_RotateVelo`|Rotational velocity|$rad/s\\deg/s\\rpm$|
+|`Unit_RotateAcc`|Rotational acceleration|$rad/s^2\\deg/s^2$|
+|`Unit_Moment`|Moment|$N*mm\\N*m\\mN*mm\\kgf*mm\\lbf*ft\\lbf*in\\tf*m$|
+|`Unit_Pressure`|Pressure|$MPa\\Pa\\kPa\\kgf/mm^2\\lbf/ft^2\\lbf/in^2\\tf/m^2\\GPa$|
+|`Unit_Density`|Density|$t/mm^3\\kg/m^3\\kg/mm^3\\kgf*s^2/mm^4\\slug/ft^3\\lbf*s^2/in^4$|
+|`Unit_Stiffness`|Stiffness|$N/mm\\N/m\\mN/mm\\kgf/mm\\lbf/ft\\lbf/in$|
+|`Unit_RotateStiff`|Rotational stiffness|$N*mm/rad\\N*m/rad\\mN*mm/rad\\kgf*mm/rad\\lbf*ft/rad\\lbf*in/rad\\N*mm/deg$|
+|`Unit_DampingCoef`|Damping coefficient|$N*s/mm\\N*s/m\\mN*s/mm\\kgf*s/mm\\lbf*s/ft\\lbf*s/in$|
+|`Unit_RotateDampingCoef`|Rotational damping coefficient|$N*mm*s/rad\\N*m*s/rad\\mN*mm*s/rad\\kgf*mm*s/rad\\lbf*ft*s/rad\\lbf*in*s/rad\\N*mm*s/deg$|
+|`Unit_Modulus`|Elastic modulus|$N/mm^2\\N/m^2\\mN/mm^2\\kgf/mm^2\\lbf/ft^2\\lbf/in^2$|
+|`Unit_Energy`|Energy|$mJ\\J\\miuJ\\kcal\\ft*lbf\\in*lbf\\kJ\\cal$|
+|`Unit_Power`|Power|$mW\\W\\miuW\\kcal/s\\ft*lbf/s\\in*lbf/s$|
+|`Unit_ThermalExCoef`|Coefficient of linear expansion|$/K$|
+|`Unit_ThermalConductivity`|Thermal conductivity|$mW/mm*K\\W/m*K\\miuW/mm*K\\kcal/mm*h*K\\lbf/s*K$|
+|`Unit_ConvectionCoef`|Convection coefficient|$mW/mm^2*K\\W/m^2*K\\miuW/mm^2*K\\kcal/mm^2*h*K\\lbf/ft*s*K\\lbf/in*s*K$|
+|`Unit_SpecificHeat`|Specific heat|$mJ/t*K\\J/kg*K\\miuJ/kg*K\\kcal/kg*K\\ft*lbf/slug*K\\in^2/s^2*K$|
+|`Unit_HeatFlux`|Heat flux|$mW/mm^2\\W/m^2\\miuW/mm^2\\kcal/mm^2*h\\lbf/ft*s\\lbf/in*s$|
+|`Unit_HeatGeneration`|Heat generation|$mW/mm^3\\W/m^3\\miuW/mm^3\\kcal//mm^3*h\\lbf/ft^2*s\\lbf/in^2*s$|
+|`Unit_MomentInertia`|Inertia (Area) moment|None|
+|`Unit_TorsionalConst`|Torsional rigidity|None|
+|`Unit_WarpCoef`|Warping factor|$mm^6\\m^6\\ft^6\\in^6\\cm^6$|
+|`Unit_LinearMassMomentIntertia`|Mass moment of inertia|None|
+|`Unit_Stress`|Stress|$N/mm^2\\N/m^2\\mN/mm^2$|
+|`Unit_Strain`|Strain|None|
+|`Unit_ThermalEnergy`|Thermal energy|$J\\mJ\\cal$|
+|`Unit_Frequency`|Frequency|$Hz$|
+|`Unit_VolumeEnergyDensity`|Volume energy density|$J/mm^3\\J/m^3\\mJ/mm^3$|

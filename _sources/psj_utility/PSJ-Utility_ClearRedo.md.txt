@@ -1,0 +1,32 @@
+# ClearRedo
+
+## Description
+
+Clear Redo list
+
+## Syntax
+
+ClearRedo()
+
+## Inputs
+
+1. None
+
+    No input value
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+```python
+JPT.ClearRedo()
+```
+
+*Output:*
+
+None

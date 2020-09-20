@@ -1,0 +1,39 @@
+---
+lang: en
+title: MergeFace
+---
+
+MergeFace
+---------
+
+## Description
+
+Merge Face
+
+## Syntax
+
+MergeFace(Cursor\[\] face,bool merge_edge)
+
+## Inputs
+
+1.  Cursor\[\]
+
+    Face List
+
+2.  bool
+
+    Auto Merge Edge 1=Yes,0=No
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+MergeFace(\[6:24, 6:26\], 0)

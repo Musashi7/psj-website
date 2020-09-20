@@ -1,0 +1,431 @@
+---
+lang: en
+title: CreateAnsysJob
+---
+
+CreateAnsysJob
+--------------
+
+## Description
+
+Create Ansys Job
+
+## Syntax
+
+CreateAnsysJob(Cstring name, int analysisType, int SolverType, Cstirng JobName, Cstring JobDescription, bool bOutputDisplacements, bool bOutputReactionLoad, bool bOutputStrain, bool bOutputStress, int iAnalysisOpt, bool bCal_Press_effects, double fUniTem, double fRefTemp, double fEndLoadtime, int iTimeStep, int iStepChosen, int iSubStepNum, int iMaxSubStep, int iMinStepNum, double fTimeStepSize, double fMinTimeStep, double fMaxTimeStep, int iWriteReslutFre, int iN, bool bRunAPDL, bool bWriteResultDB, double fEndFreq, double fStartFreq, int iSolutionOption, double fPropChange, int iPointNum, double fMinTemp, double fMaxTemp, int EquationSolv, double fTolLevel, double fMultiplier, bool bSignlePrecision, double fTempDiff, double fStartFreq, double fEndFreq, int nSubsteps, double fAlphad, double fBetad, double fDmprat, bool bOutputDisplacements, bool bOutputStrain, bool bOutputStress, int iLCId, int imodeShape, int iModeMethod, int iExtractNum, bool bExpandShape, int iExpandNum, bool bUseApprox, bool bInclPrssEff, bool bMemorySave, bool bRsvec, bool bOutputDisplacements, bool bOutputStrain, bool bOutputStress, int iPrintNum, bool bMemorySave, bool bOutputHeatFlux, bool bOutputTemperature, bool bPivotsCheck, bool bSignlePrecision, double fMultiplier, double fTempDiff, double fTolLevel, int iAdaptiveDes, int iEquationSolv, int iNPOption, Cstring AnsysVersion, Cstring CommandLineOption, bool OutputSOLVE, int iRigidMode, int iWorkSize, int iNPADNum, int iBlockNum, int iMaxiteratCnt, int iMinNShift, int iSeqCheck, bool bTranEffect, int iLoadingType, double fMassMatrixMult, double fStiffMatrixMult, bool bMidStep, double fToleranceBisection, double fToleranceTimeStep, int iTimeInterAlgor, int iTimeInter, double fGAMMA, double fALPHA, double fDELTA, double fALPHAF, double fALPHAM, bool bOutputTemperature, bool bOutputHeatFlux, Cursor Edit)
+
+## Inputs
+
+1.  Cstring
+
+    Name Job
+
+2.  int
+
+    Analysis Type\[0:none 1:struct 2:thermal\]
+
+3.  int
+
+    Solver Type \[0:none 1:modal 2:hamonic 3:static 4:struct transient 5:steady state 6:thermal transient\]
+
+4.  Cstring
+
+    Name Job
+
+5.  Cstring
+
+    Job description
+
+6.  bool
+
+    Output Displacements
+
+7.  bool
+
+    Output Reaction Load
+
+8.  bool
+
+    Output Strain
+
+9.  bool
+
+    Output Stress
+
+10. int
+
+    Analysis Opt \[0 = small displacement,1 = large displacement \]
+
+11. bool
+
+    Cal Press effects
+
+12. double
+
+    Uniform temperature
+
+13. double
+
+    Reference temperature
+
+14. double
+
+    End load time
+
+15. int
+
+    Time step \[0 = Prog chosen, 1 = On, 2 = Off, 3 = Arc-Length\]
+
+16. int
+
+    Step chosen \[0 = Number of SubSteps, 1 = Time Increment\]
+
+17. int
+
+    Number of substep
+
+18. int
+
+    Max Number of substep
+
+19. int
+
+    Min Number of substep
+
+20. double
+
+    Time step size
+
+21. double
+
+    Min time step
+
+22. double
+
+    Max time step
+
+23. int
+
+    Write result fre \[0=write every subStep, 1=Do not write any substeps,2=Write last subStep only,3= Write every Nth Substep,4=Write N Number subStep\]
+
+24. int
+
+    iN
+
+25. bool
+
+    Run APDL
+
+26. bool
+
+    Write result DB
+
+27. double
+
+    End frequency
+
+28. double
+
+    Start frequency
+
+29. int
+
+    Solution option \[0=Full,=1=Quasi,2=Linear\]
+
+30. double
+
+    Property change for reformation
+
+31. int
+
+    Number of points in fast table
+
+32. double
+
+    Min temperature for fast table
+
+33. double
+
+    Max temperature for fast table
+
+34. int
+
+    Equation solver\[0=Program Chosen,1=Frontal solver,2=Sparse solver,3=Jacobi Conj Grad,4=JCG out-of-core,5=Precondition CG,6=PCG out-of-core,7=Algebraic M-grid,8=Inc Cholesky CG,9=Iter auto select\]
+
+35. double
+
+    Tolerance/Level
+
+36. double
+
+    Multiplier
+
+37. bool
+
+    Single Precision
+
+38. bool
+
+    Memory save
+
+39. double
+
+    Temperature difference
+
+40. double
+
+    Start frequency
+
+41. double
+
+    End frequency
+
+42. int
+
+    Substeps
+
+43. double
+
+    Alfhad
+
+44. double
+
+    Betad
+
+45. double
+
+    Dmprat
+
+46. bool
+
+    Output displacement
+
+47. bool
+
+    Output Strain
+
+48. bool
+
+    Output Stress
+
+49. int
+
+    Load case id
+
+50. int
+
+    Nrmkey Normalize mode shapes \[0=To mass matrix, 1= To unity\]
+
+51. int
+
+    Mode Method \[0=Block,1=Subspace,2=Reduced\]
+
+52. int
+
+    Extract Num
+
+53. bool
+
+    Expand mode shape
+
+54. int
+
+    No. of modes to expand
+
+55. bool
+
+    Use lumped mass approx.
+
+56. bool
+
+    Incl prestress effects
+
+57. bool
+
+    Memory save
+
+58. bool
+
+    Residual Vector
+
+59. bool
+
+    Output displacement
+
+60. bool
+
+    Output Strain
+
+61. bool
+
+    Output Stress
+
+62. int
+
+    Num of modes to print
+
+63. bool
+
+    Memory save for steady state
+
+64. bool
+
+    Output heat flux
+
+65. bool
+
+    Output temperature
+
+66. bool
+
+    Pivots check
+
+67. bool
+
+    single precision
+
+68. double
+
+    Multiplier
+
+69. double
+
+    Temperature difference
+
+70. double
+
+    Tolerance level
+
+71. int
+
+    Adaptive descent \[0 = ON if necessary, 1 = ON, 2 = OFF\]
+
+72. int
+
+    Equation solver \[0= Program Chosen,1= Frontal solver\]
+
+73. int
+
+    Newton-Raphson option\[0= Program chosen, 1= Full N-R, 2= Modified N-R, 3= Initial stiffnes, 4= Full N-R unsymm\]
+
+74. Cstring
+
+    Ansys version
+
+75. Cstring
+
+    Command line option
+
+76. bool
+
+    Output solver
+
+77. int
+
+    Rigid mode
+
+78. int
+
+    Work size
+
+79. int
+
+    No of extra vectors
+
+80. int
+
+    NPERBK No of modes/memory block
+
+81. int
+
+    NUMSSI Maximum number of iterations
+
+82. int
+
+    NSHIFT Min, before shift
+
+83. int
+
+    Strmck Sturm sequence check \[0 =At shift+end pts, 1= At shift pts, 2 = No Sturm check\]
+
+84. bool
+
+    Transient effects
+
+85. int
+
+    Loading type \[0= Stepped Loading,1= Ramped Loading\]
+
+86. double
+
+    Mass matrix multiplier
+
+87. double
+
+    Stiffness matrix multiplier
+
+88. bool
+
+    MidStep Criterion
+
+89. double
+
+    Tolerance for Bisection
+
+90. double
+
+    Tolerance for TimeStep
+
+91. int
+
+    Time intergration algorithm \[0 =Newmark,1=HHT\]
+
+92. int
+
+    Time intergration\[0 =Amplitude decay ,1= Integration parameters\]
+
+93. double
+
+    Gamma
+
+94. double
+
+    Alpha
+
+95. double
+
+    Delta
+
+96. double
+
+    AlphaF
+
+97. double
+
+    AlphaM
+
+98. bool
+
+    Output temperature
+
+99. bool
+
+    Output heat flux
+
+100. Cursor
+
+     Edit job
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+CreateAnsysJob("Ansys", 2, 5, "Nastran4", "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1.79769e+308, 1.79769e+308, 0, 0.05, 64, 0, 0, 0, 0, 0, 0, 0, 1.1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, "", "", 0, 0, 8, 4, 5, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0.005, 0.252506, 0.505, 0.005, 0, 0, 0, 0:0)

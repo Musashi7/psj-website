@@ -1,0 +1,31 @@
+# RemoveAllContacts
+
+## Description
+
+Remove all of Contact in models
+
+## Syntax
+
+RemoveAllContacts()
+
+## Inputs
+
+1. None
+
+No input value
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+
+```python
+JPT.RemoveAllContacts()
+```
+
+*Output:*

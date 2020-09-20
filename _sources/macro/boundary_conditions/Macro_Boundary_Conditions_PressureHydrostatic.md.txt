@@ -1,0 +1,79 @@
+---
+lang: en
+title: PressureHydrostatic
+---
+
+PressureHydrostatic
+-------------------
+
+#### Description
+
+Create Pressure hydrostatic
+
+#### Syntax
+
+PressureHydrostatic(String name, double staticPressure, double density, int densityUnit, double gravity, int gravityUnit, int gravityDir, double waterSurface, int surfaceUnit, int distributionMethod, Cursor\[\] targets, Cursor crEdit)
+
+#### Inputs
+
+1.  String
+
+    name
+
+2.  double
+
+    static pressure
+
+3.  double
+
+    density
+
+4.  int
+
+    density unit
+
+5.  double
+
+    gravity
+
+6.  int
+
+    gravity unit
+
+7.  int
+
+    gravity direction
+
+8.  double
+
+    water surface
+
+9.  int
+
+    water surface unit
+
+10. int
+
+    distributionMethod (0: Per selected entity, 1: Per node, 2: Total of select)
+
+11. Cursor\[\]
+
+    targets
+
+12. Cursor
+
+    edit target
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+PressureHydrostatic("PressureHydrostatic1", 0, 1000, 0, 0, 0, 0, 0, 0, 0, \[6:23\], 0:0)

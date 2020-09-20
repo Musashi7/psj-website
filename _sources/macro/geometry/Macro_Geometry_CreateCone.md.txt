@@ -1,0 +1,63 @@
+---
+lang: en
+title: CreateCone
+---
+
+CreateCone
+----------
+
+## Description
+
+Create Cone Body
+
+## Syntax
+
+CreateCone(double\[3\] vdOriginXYZ, double bottomRadius, double height, int circleNodeCount, int axisNodeCount, string bodyName, color bodyColor, cursor crCoord)
+
+## Inputs
+
+1.  double\[3\]
+
+    Point \[x,y,z\]
+
+2.  double
+
+    Bottom Radius
+
+3.  double
+
+    Height
+
+4.  int
+
+    Circle Node Count
+
+5.  int
+
+    Axis Node Count
+
+6.  String
+
+    Body Name
+
+7.  Color
+
+    Body Color
+
+8.  Cursor
+
+    Coordinate Cursor
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+CreateCone(\[0, 0, 0\], 0.01, 0.02, 100, 5, "Cone_1", 7138156, 0:0)

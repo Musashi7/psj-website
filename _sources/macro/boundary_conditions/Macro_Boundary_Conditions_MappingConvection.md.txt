@@ -1,0 +1,99 @@
+---
+lang: en
+title: MappingConvection
+---
+
+MappingConvection
+-----------------
+
+#### Description
+
+Create mapping pressure
+
+#### Syntax
+
+MappingConvection(CString name, Cursor\[\] Target, int Position, int ViewCp, int Cp, int SourceType, int\[6\] MappedCpIndex, int\[6\] MappedCpIndex, double RScale, double\[3\] Offset, double\[3\] Rotate, double TScale, double seachRange, int HTCunit, int tempUnit, Cstring path, Cursor editMapping)
+
+#### Inputs
+
+1.  Cstring
+
+    Name of mapping convection
+
+2.  Cursor\[\]
+
+    Target list
+
+3.  int
+
+    mapping position, 0: surface node, 1:solid node, 2:surface element, 3: solid element
+
+4.  int
+
+    View component (Cp)
+
+5.  int
+
+    component number, 2 for convection
+
+6.  int
+
+    source data type, 0: fluent, 1: starCD, 2:text
+
+7.  int\[6\]
+
+    Mapped Cp Index List
+
+8.  int\[6\]
+
+    Mapped Cp Index List
+
+9.  double
+
+    Rscale
+
+10. double\[3\]
+
+    Offset List
+
+11. double\[3\]
+
+    Rotate List
+
+12. double
+
+    Tscale
+
+13. double
+
+    Search range
+
+14. int
+
+    HTC Unit
+
+15. int
+
+    Temperature unit
+
+16. Cstring
+
+    Path
+
+17. Cursor
+
+    Edit mapping convection
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+MappingConvection("MappingConvection2", \[6:23\], 2, 0, 2, 2, 0, 1, 1, \[0, 0, 0\], \[1, 0, 0\], 1, 0, 0, 1, "D:/ImportFile/wj-block-cold.csv", 0:0)

@@ -1,0 +1,10 @@
+# Run Menu
+
+## Run
+
+![](./../_images/IDE_Run.png)  
+
+| Name         | Description                              | Shortcut key           |
+|--------------|------------------------------------------|:----------------------:|
+| Run All      | Execute all the script                   | {badge}`F5,badge-dark badge-pill` |
+| Run Selected | Execute only the current selected script | {badge}`F6,badge-dark badge-pill` |

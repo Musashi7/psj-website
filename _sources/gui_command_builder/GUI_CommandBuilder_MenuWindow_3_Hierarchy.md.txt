@@ -1,0 +1,17 @@
+#  Hierrachy Window
+
+All components in use are displayed in a tree format.
+ User can change the position, duplicate or delete components.
+
+![](./../_images/GUI_CommandBuilder_MenuWindow_Hierarchy.png)
+
+## Hierrachy Window details
+
+|                      Icon                       | Name                               | Description                                                  |
+| :---------------------------------------------: | :--------------------------------- | ------------------------------------------------------------ |
+| ![](./../_images/Hierarchy_icon/Move_upperlevel.png) | Move item out of current container | Move the selected component out of the current container which it is being belong to |
+| ![](./../_images/Hierarchy_icon/Move_lowerlevel.png) | Move item into next container      | Move the selected component into the above container         |
+|  ![](./../_images/Hierarchy_icon/Move_forward.png)   | Move item forward one level        | Move the selected component up one level but still inside the current container |
+|  ![](./../_images/Hierarchy_icon/Move_backward.png)  | Move item backward one level       | Move the selected component down one level but still inside the current container |
+|   ![](./../_images/Hierarchy_icon/Copy_insert.png)   | Copy item and insert it            | Duplicate the selected component                             |
+|     ![](./../_images/Hierarchy_icon/Delete.png)      | Delete selected item               | Delete the selected component                                |

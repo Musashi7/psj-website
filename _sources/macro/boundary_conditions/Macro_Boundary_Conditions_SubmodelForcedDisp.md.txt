@@ -1,0 +1,107 @@
+---
+lang: en
+title: SubmodelForcedDisp
+---
+
+SubmodelForcedDisp
+------------------
+
+#### Description
+
+create sub model forced displacement
+
+#### Syntax
+
+SubmodelForcedDisp(String m_strName,int iSolver,String strFilePathName,int iProcessNo,BOOL bTranslationX,BOOL bTranslationY,BOOL bTranslationZ,int iReferType,double dExtensionRange,double dExtensionTol,double dExtensionLimitTol,String strFilePathName,int iUseBucket,int iNumBucketMaxX,int iNumBucketMaxY,int iNumBucketMaxZ,int iPrevBc,Cursor\[\] m_taTarget,Cursor m_crEdit)
+
+#### Inputs
+
+1.  String
+
+    name of sub model forced displacement
+
+2.  int
+
+    slover\[0:ADVC\]
+
+3.  String
+
+    file path
+
+4.  int
+
+    process number
+
+5.  BOOL
+
+    if translation X used
+
+6.  BOOL
+
+    if translation Y used
+
+7.  BOOL
+
+    if translation Z used
+
+8.  int
+
+    refer type\[0:blank; 1:result; 2:restart\]
+
+9.  double
+
+    extension_range
+
+10. double
+
+    extension_tol
+
+11. double
+
+    extension_limit_tol
+
+12. String
+
+    global_element_set
+
+13. int
+
+    use_bucket\[0:blank; 1:Yes; 2:No\]
+
+14. int
+
+    num_bucket_max_x
+
+15. int
+
+    num_bucket_max_y
+
+16. int
+
+    num_bucket_max_z
+
+17. int
+
+    prev_bc\[0:blank; 1:default hold\]
+
+18. Cursor\[\]
+
+    targets
+
+19. Cursor
+
+    edit cursor
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+SubmodelForcedDisp("SubmodelForcedDisplacement1", 0, "/home/", 0, 1, 1, 1, -1, 1.79769e+308, 1.79769e+308, 1.79769e+308, "", -1, 2147483647, 2147483647, 2147483647, -1, \[6:21\], 0:0)

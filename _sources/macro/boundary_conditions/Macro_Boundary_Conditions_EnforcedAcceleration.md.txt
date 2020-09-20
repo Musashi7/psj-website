@@ -1,0 +1,135 @@
+---
+lang: en
+title: EnforcedAcceleration
+---
+
+EnforcedAcceleration
+--------------------
+
+#### Description
+
+create enforced acceleration
+
+#### Syntax
+
+EnforcedAcceleration(String m_strName,int dwDof,double fVel\[0\],double fVel\[1\],double fVel\[2\],double fVel\[3\],double fVel\[4\],double fVel\[5\],Cursor curCoord,int enArrowDir,Cursor crTable,Cursor crNodeSet,double m_fPhase,double m_fDelay,Cursor crPhaseTable,BOOL bExport,Cursor crMEExport\[0\],Cursor crMEExport\[1\],Cursor crMEExport\[2\],Cursor crMEExport\[3\],Cursor crMEExport\[4\],Cursor crMEExport\[5\],int iAcUnit,int iRotUnit,Cursor\[\] m_taTarget,Cursor m_crEdit)
+
+#### Inputs
+
+1.  String
+
+    name of enforced acceleration
+
+2.  int
+
+    dof
+
+3.  double
+
+    translation x
+
+4.  double
+
+    translation y
+
+5.  double
+
+    translation z
+
+6.  double
+
+    rotate x
+
+7.  double
+
+    rotate y
+
+8.  double
+
+    rotate z
+
+9.  Cursor
+
+    coordinate system
+
+10. int
+
+    arrow direction\[0:Start at Node; 1:End at Node\]
+
+11. Cursor
+
+    select table
+
+12. Cursor
+
+    node set table
+
+13. double
+
+    phase
+
+14. double
+
+    delay
+
+15. Cursor
+
+    phase table
+
+16. BOOL
+
+    if export defined
+
+17. Cursor
+
+    translation x
+
+18. Cursor
+
+    translation y
+
+19. Cursor
+
+    translation z
+
+20. Cursor
+
+    rotation x
+
+21. Cursor
+
+    rotation y
+
+22. Cursor
+
+    rotation z
+
+23. int
+
+    unit of acceleration
+
+24. int
+
+    unit of rotate
+
+25. Cursor\[\]
+
+    targets
+
+26. Cursor
+
+    edit cursor
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+EnforcedAcceleration("EnforcedAcceleration1", 63, 0.001, 0.002, 0.003, 3, 2, 1, 0:0, 0, 0:0, 0:0, 1.79769e+308, 1.79769e+308, 0:0, 0, 0:0, 0:0, 0:0, 0:0, 0:0, 0:0, 0, 0, \[6:26\], 0:0)

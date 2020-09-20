@@ -1,0 +1,29 @@
+---
+lang: en
+title: ViewShowSurface
+---
+
+ViewShowSurface
+---------------
+
+#### Description
+
+Turn ON/OFF Show Surface
+
+#### Syntax
+
+ViewShowSurface()
+
+#### Inputs
+
+1.  bool
+
+    Turn on/off display switch 0=On 1=OFF
+
+#### Return Code
+
+No Arguments
+
+#### Sample Code
+
+ViewShowSurface(0)

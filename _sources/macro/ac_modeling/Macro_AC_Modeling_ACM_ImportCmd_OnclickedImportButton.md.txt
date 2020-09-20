@@ -1,0 +1,31 @@
+# ACM_ImportCmd_OnclickedImportButton
+
+## Description
+
+ACM_ImportCmd_OnclickedImportButton
+
+## Syntax
+
+ACM_ImportCmd_OnclickedImportButton(string filePath, double dFaceAngle)
+
+## Inputs
+
+1. String
+
+File path directory
+
+2. Double
+
+Nastran data face angle
+
+## Return Code
+
+**1** - The function is executed correctly.
+
+**0** - Cannot execute.
+
+## Sample Code
+
+```python
+ACM_ImportCmd_OnclickedImportButton(["D:ImportFile/Job_1/_tri6.bdf"], 15)
+```

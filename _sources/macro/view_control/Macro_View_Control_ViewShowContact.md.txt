@@ -1,0 +1,29 @@
+---
+lang: en
+title: ViewShowContact
+---
+
+ViewShowContact
+---------------
+
+#### Description
+
+Turn ON/OFF Show Contact
+
+#### Syntax
+
+ViewShowContact(bool Flag)
+
+#### Inputs
+
+1.  bool
+
+    Turn on/off display switch 0=On 1=OFF
+
+#### Return Code
+
+Nothing
+
+#### Sample Code
+
+ViewShowContact(0)

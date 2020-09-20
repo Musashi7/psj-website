@@ -1,0 +1,39 @@
+---
+lang: en
+title: AddItemsEdgeElementEdges
+---
+
+AddItemsEdgeElementEdges
+------------------------
+
+## Description
+
+Add Items Edge from Element Edges
+
+## Syntax
+
+AddItemsEdgeElementEdges(ElemEdge\[\] ElemEdge, bool BreakFace)
+
+## Inputs
+
+1.  ElemEdge \[\]
+
+    Target Element Edges for Creating New Edge
+
+2.  bool
+
+    Break Face. true = 1,false = 0
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+CreateEdgeByElemEdge(\[10:172-10:180, 10:180-10:188, 10:188-10:196\], 1)

@@ -1,0 +1,47 @@
+# ACM_CloseHoleMultiEdgeFace
+
+## Description
+
+ACM_CloseHole_MultiEdgeFace
+
+## Syntax
+
+ACM_CloseHoleMultiEdgeFace(Cursor[] FaceCursor, Cursor[] EdgeCursor, bool bNewBody, CString newBodyname, bool bRemesh, double dAvgMeshSize)
+
+## Inputs
+
+1. Cursor[]
+
+Face List
+
+2. Cursor[]
+
+Edge List
+
+3. Bool
+
+Create New Body
+
+4. CString
+
+New Body Name
+
+5. Bool
+
+Remesh
+
+6. Double
+
+Average Remesh Size
+
+## Return Code
+
+**1** - The function is executed correctly.
+
+**0** - Cannot execute.
+
+## Sample Code
+
+```python
+CloseHoleMultiEdgeFace([6:13049, 6:13059], [5:290520], 1, "NewBody", 1, 0.008)
+```

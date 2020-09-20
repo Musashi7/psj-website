@@ -1,0 +1,71 @@
+---
+lang: en
+title: ForceQuadratic
+---
+
+ForceQuadratic
+--------------
+
+#### Description
+
+Create Force (Quadratic)
+
+#### Syntax
+
+ForceQuadratic(String name, double totalForce, double a, double b, Cursor crCoordinate, int angleBase, double angleRange, int arrowDir, Cursor\[\] targets, Cursor crEdit)
+
+#### Inputs
+
+1.  String
+
+    name
+
+2.  double
+
+    total force
+
+3.  double
+
+    a
+
+4.  double
+
+    b
+
+5.  Cursor
+
+    coordinate system
+
+6.  int
+
+    angle base
+
+7.  double
+
+    angle range
+
+8.  int
+
+    arrorDir (0: Start at node, 1: End at node)
+
+9.  Cursor\[\]
+
+    targets
+
+10. Cursor
+
+    edit target
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+ForceQuadratic("Force2", 1, 2, 3, 0:0, 0, 1.5708, 0, \[6:22\], 0:0)

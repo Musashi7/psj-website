@@ -1,0 +1,13 @@
+# File Menu
+
+## File
+
+![](./../_images/IDE_File.png)  
+
+| Name    | Description                                   | Shortcut key |
+|---------|-----------------------------------------------|--------------|
+| New     | Make a new document                           | {badge}`Ctrl,badge-dark badge-pill` + {badge}`N,badge-dark badge-pill`     |
+| Open    | Open a saved Python script file               | {badge}`Ctrl,badge-dark badge-pill` + {badge}`O,badge-dark badge-pill`     |
+| Save    | Save the Python script file                   | {badge}`Ctrl,badge-dark badge-pill` + {badge}`S,badge-dark badge-pill`     |
+| Save As | Save the Python script file with another name | {badge}`Ctrl,badge-dark badge-pill` + {badge}`E,badge-dark badge-pill`     |
+| Exit    | Close the IDE                                 | {badge}`Ctrl,badge-dark badge-pill` + {badge}`Q,badge-dark badge-pill`     |

@@ -1,0 +1,21 @@
+# Element types 
+
+ElemKind is an enumeration of element types.
+
+|ElemKind|Description|ElemType|Description|
+|-|-|-|-|
+|`ELEMKIND_0D`|An element prepared for a node.|`ELEMTYPE_POINT`|Vertex element.|
+|`ELEMKIND_1D`|1D element (bar element).|`ELEMTYPE_LINE2`|1D element (First order element)|
+|||`ELEMTYPE_LINE3`|1D element (Second order element)|
+|`ELEMKIND_2D`|2D element (Shell element)|`ELEMTYPE_TRI3`|Triangular primary element|
+|||`ELEMTYPE_TRI6`|Triangular quadratic element|
+|||`ELEMTYPE_QUAD4`|Quadratic first order element|
+|||`ELEMTYPE_QUAD8`|Quadratic second order element|
+|`ELEMKIND_3D`|3D element (Solid element)|`ELEMTYPE_TET4`|Tetra first order element|
+|||`ELEMTYPE_TET10`|Tetra second order element|
+|||`ELEMTYPE_HEX8`|Hex first order element|
+|||`ELEMTYPE_HEX20`|Hex second order element|
+|||`ELEMTYPE_PRISM6`|Penta first order element|
+|||`ELEMTYPE_PRISM15`|Penta second order element|
+|||`ELEMTYPE_PYRAMID5`|Pyramid first order element|
+|||`ELEMTYPE_PYRAMID13`|Pyramid second order element|

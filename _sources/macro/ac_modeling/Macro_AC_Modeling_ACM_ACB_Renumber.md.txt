@@ -1,0 +1,27 @@
+# ACM_ACB_Renumber
+
+## Description
+
+ACM_ACB_Renumber
+
+## Syntax
+
+ACM_ACB_Renumber([TArrayK taBodyKey])
+
+## Inputs
+
+ACM_ACB_Renumber(**[TArrayK taBodyKey]**)
+
+With *TArrayK taBodyKey* is the ID of part
+
+## Return Code
+
+**1** - The function is executed correctly.
+
+**0** - Cannot execute.
+
+## Sample Code
+
+```python
+ACM_ACB_Renumber([2])
+```

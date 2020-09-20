@@ -1,0 +1,39 @@
+---
+lang: en
+title: Collapse
+---
+
+Collapse
+--------
+
+#### Description
+
+Collapse Element Edge
+
+#### Syntax
+
+Collapse(cursor crNodeRef, cursor crNodeEq)
+
+#### Inputs
+
+1.  Cursor
+
+    Node for reference (10:Node ID)
+
+2.  Cursor
+
+    Node for equivalence (10:Node ID)
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+Collapse(10:489, 10:490)

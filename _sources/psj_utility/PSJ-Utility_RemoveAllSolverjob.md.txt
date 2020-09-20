@@ -1,0 +1,31 @@
+# RemoveAllSolverjob
+
+## Description
+
+Remove all analysis Jobs
+
+## Syntax
+
+RemoveAllSolverjob()
+
+## Inputs
+
+1. None
+
+No input value
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+
+```python
+JPT.RemoveAllSolverjob()
+```
+
+*Output:*

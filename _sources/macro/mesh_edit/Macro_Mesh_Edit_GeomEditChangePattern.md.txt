@@ -1,0 +1,39 @@
+---
+lang: en
+title: GeomEditChangePattern
+---
+
+GeomEditChangePattern
+---------------------
+
+#### Description
+
+Change Pattern
+
+#### Syntax
+
+GeomEditChangePattern(int\[\] Face Key, int Pattern Type)
+
+#### Inputs
+
+1.  int\[\]
+
+    Target Faces for Change Pattern
+
+2.  int
+
+    Change Pattern Type\[Standard/Union Jack\]
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+GeomEditChangePattern(\[24, 26\], 1))

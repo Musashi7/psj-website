@@ -1,0 +1,35 @@
+---
+lang: en
+title: SharedFaces
+---
+
+SharedFaces
+-----------
+
+## Description
+
+Shared Faces
+
+## Syntax
+
+SharedFaces()
+
+## Inputs
+
+1.  NONE
+
+    No input value
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+SharedFaces()

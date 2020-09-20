@@ -1,0 +1,43 @@
+---
+lang: en
+title: HexSweepCurve
+---
+
+HexSweepCurve
+-------------
+
+#### Description
+
+Create Hex mesh by curve sweep
+
+#### Syntax
+
+HexSweepCurve(int nFaceIds, int nEdgeIds, double dMeshSize)
+
+#### Inputs
+
+1.  int\[\]
+
+    Face Id array for circular sweep
+
+2.  int\[\]
+
+    Edge Id array for circular sweep
+
+3.  double
+
+    Mesh Size
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+HexSweepCurve(\[247\], \[44\], 0.0001)

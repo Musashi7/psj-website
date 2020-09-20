@@ -1,0 +1,47 @@
+---
+lang: en
+title: MeshEditMoveNodeDeform
+---
+
+MeshEditMoveNodeDeform
+----------------------
+
+#### Description
+
+Move nodes deform
+
+#### Syntax
+
+MeshEditMoveNodeDeform(int m_solverType,String m_strFilePath,int m_iStep,double m_dScale)
+
+#### Inputs
+
+1.  int
+
+    type of solver
+
+2.  String
+
+    file path
+
+3.  int
+
+    Step
+
+4.  double
+
+    value of scale
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+MeshEditMoveNodeDeform(1,"Test",1,0.001)

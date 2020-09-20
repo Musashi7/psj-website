@@ -1,0 +1,33 @@
+# MsgOut
+
+## Description
+
+Display string in Python Output.
+
+## Syntax
+
+MsgOut()
+
+## Inputs
+
+1. None
+
+No input value
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+
+```python
+JPT.MsgOut('Hello!!!')
+```
+
+*Output:*
+
+\> `Hello!!!`

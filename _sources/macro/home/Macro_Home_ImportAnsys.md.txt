@@ -1,0 +1,43 @@
+---
+lang: en
+title: ImportAnsys
+---
+
+ImportAnsys
+-----------
+
+## Description
+
+Import Ansys file
+
+## Syntax
+
+ImportAnsys(string\[\] vecPath, double faceAngle, double edgeAngle)
+
+## Inputs
+
+1.  String\[\]
+
+    Path directory
+
+2.  Double
+
+    Face angle
+
+3.  Double
+
+    Edge angle
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+ImportAnsys(\["D:/Output.dat"\], 1.0472, 1.0472)

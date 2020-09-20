@@ -1,0 +1,33 @@
+# ClearUndo
+
+## Description
+
+Clear Undo list
+
+## Syntax
+
+`ClearUndo()`
+
+## Inputs
+
+1. None
+
+ No input value
+
+## Return Code
+
+*Python Output*
+
+- No return value
+
+## Sample Code
+
+*Input:*
+
+```python
+JPT.ClearUndo()
+```
+
+*Output:*
+
+None

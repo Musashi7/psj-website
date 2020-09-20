@@ -1,0 +1,51 @@
+---
+lang: en
+title: BeamMeshing
+---
+
+BeamMeshing
+-----------
+
+## Description
+
+Beam/1D Meshing
+
+## Syntax
+
+BeamMeshing(int\[\] vcrCadEdgeKey, int\[\] vcrBarEdgeKey, int\[\] vcrBarBody, double dDocMeshSize, int iDocNumOfElem)
+
+## Inputs
+
+1.  Int\[\]
+
+    Edge cursor(\[Edge ID\])
+
+2.  Int\[\]
+
+    Bar and Edge cursor(\[BarEdge ID\])
+
+3.  Int\[\]
+
+    Bar cursor(\[Bar ID\])
+
+4.  Double
+
+    Mesh size
+
+5.  Int
+
+    Number of Elements
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+BeamMeshing(\[\], \[155, 156\], \[5\], 0, 5)

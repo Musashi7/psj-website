@@ -1,0 +1,36 @@
+# GetRedoCount
+
+## Description
+
+Get number of redo action which is capable of running
+
+## Syntax
+
+GetRedoCount()
+
+## Inputs
+
+1. NONE
+
+No arguments
+
+## Return Code
+
+*Python Output*
+
+- int
+
+Number of redo action
+
+## Sample Code
+
+*Input:*
+
+```python
+redo = JPT.GetRedoCount()
+print(str(redo))
+```
+
+*Output:*
+
+\> `2`

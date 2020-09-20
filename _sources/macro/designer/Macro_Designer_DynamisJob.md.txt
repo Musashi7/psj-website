@@ -1,0 +1,439 @@
+---
+lang: en
+title: DynamisJob
+---
+
+DynamisJob
+----------
+
+## Description
+
+Create Dynamis job
+
+## Syntax
+
+DynamisJob(String strName, String strDescription, Cursor\[\] taTarget, int writeType, int gridFormatType, int deleteFloatingNodes, int continuanceMarker, int defineLbcId, int definedLoadId, int definedSpcId, int definedMpcId, int useCASI, double epsilon, int maxNumOfIter, int memory, int paramInrel, int ncpu, int solNo, String includeFilePath, \[double startFreq, double endFreq, int noOfModes\], \[double startFrequency, double increment, int numOfInc, int tableId\], \[int numOfSteps, double timeIncrement, int outputInterval, int modalDampingTableId\], \[int value_Displacement, int value_SpcForces, int value_Oload, int value_MpcForces, int value_Stress, int value_Strain, int value_Force, int value_StrainEnergy, int value_Sdisplacement, int value_Acceleration, int value_Velocity, int value_Meffmass, int value_Thermal, int value_Flux, int type_Displacement, int type_SpcForces, int type_Oload, int type_MpcForces, int type_Stress, int type_Strain, int type_Force, int type_StrainEnergy, int type_Sdisplacement, int type_Acceleration, int type_Velocity, int type_Meffmass, int type_Thermal, int type_Flux\], \[int GEOMCHECK_NONE\], \[int ECHO, String title\], \[double subcaseIdForLoad, double subcaseIdForDload, double subcaseIdForSpc, double subcaseIdForMpc, double subcaseIdForTempInit, double subcaseIdForTempLoad\], \[int POST, int OGEOM, int AUTOSPC, String GRDPNT, String WTMASS, String K6ROT, String MAXRATIO, int BAILOUT, int PRGPST\], \[int NINC, int KMETHOD, int MAXITER, int useEPSU, int useEPSP, int useEPSW, double EPSU, double EPSP, double EPSW\], \[int NDT, double DT, int MAXITER\], \[\[int id, int title, int subcaseIdForLoad, int subcaseIdForDload, int subcaseIdForSpc, int subcaseIdForMpc, int subcaseIdForTempInit, int subcaseIdForTempLoad, int outputReq_Displacement, int outputReq_Stress, int outputReq_Strain, int outputReq_Acceleration, int outputReq_Velocity\], ...\], Cursor crEdit)
+
+## Inputs
+
+1.  String
+
+    Job name
+
+2.  String
+
+    Job description
+
+3.  Cursor\[\]
+
+    target
+
+4.  int
+
+    writeType parameter
+
+5.  int
+
+    gridFormatType parameter
+
+6.  int
+
+    deleteFloatingNodes parameter
+
+7.  int
+
+    continuanceMarker parameter
+
+8.  int
+
+    defineLbcId parameter
+
+9.  int
+
+    definedLoadId parameter
+
+10. int
+
+    definedSpcId parameter
+
+11. int
+
+    definedMpcId parameter
+
+12. int
+
+    useCASI parameter
+
+13. double
+
+    epsilon parameter
+
+14. int
+
+    maxNumOfIter parameter
+
+15. int
+
+    memory parameter
+
+16. int
+
+    paramInrel parameter
+
+17. int
+
+    ncpu parameter
+
+18. int
+
+    solNo parameter
+
+19. String
+
+    includeFilePath parameter
+
+20. double
+
+    startFreq parameter
+
+21. double
+
+    endFreq parameter
+
+22. int
+
+    noOfModes parameter
+
+23. double
+
+    startFrequency parameter
+
+24. double
+
+    increment parameter
+
+25. int
+
+    numOfInc parameter
+
+26. int
+
+    tableId parameter
+
+27. int
+
+    numOfSteps parameter
+
+28. double
+
+    timeIncrement parameter
+
+29. int
+
+    outputInterval parameter
+
+30. int
+
+    modalDampingTableId parameter
+
+31. int
+
+    value_Displacement parameter
+
+32. int
+
+    value_SpcForces parameter
+
+33. int
+
+    value_Oload parameter
+
+34. int
+
+    value_MpcForces parameter
+
+35. int
+
+    value_Stress parameter
+
+36. int
+
+    value_Strain parameter
+
+37. int
+
+    value_Force parameter
+
+38. int
+
+    value_StrainEnergy parameter
+
+39. int
+
+    value_Sdisplacement parameter
+
+40. int
+
+    value_Acceleration parameter
+
+41. int
+
+    value_Velocity parameter
+
+42. int
+
+    value_Meffmass parameter
+
+43. int
+
+    value_Thermal parameter
+
+44. int
+
+    value_Flux parameter
+
+45. int
+
+    type_Displacement parameter
+
+46. int
+
+    type_SpcForces parameter
+
+47. int
+
+    type_Oload parameter
+
+48. int
+
+    type_MpcForces parameter
+
+49. int
+
+    type_Stress parameter
+
+50. int
+
+    type_Strain parameter
+
+51. int
+
+    type_Force parameter
+
+52. int
+
+    type_StrainEnergy parameter
+
+53. int
+
+    type_Sdisplacement parameter
+
+54. int
+
+    type_Acceleration parameter
+
+55. int
+
+    type_Velocity parameter
+
+56. int
+
+    type_Meffmass parameter
+
+57. int
+
+    type_Thermal parameter
+
+58. int
+
+    type_Flux parameter
+
+59. int
+
+    GEOMCHECK_NONE parameter
+
+60. int
+
+    ECHO parameter
+
+61. String
+
+    title parameter
+
+62. double
+
+    subcaseIdForLoad parameter
+
+63. double
+
+    subcaseIdForDload parameter
+
+64. double
+
+    subcaseIdForSpc parameter
+
+65. double
+
+    subcaseIdForMpc parameter
+
+66. double
+
+    subcaseIdForTempInit parameter
+
+67. double
+
+    subcaseIdForTempLoad parameter
+
+68. int
+
+    POST parameter
+
+69. int
+
+    OGEOM parameter
+
+70. int
+
+    AUTOSPC parameter
+
+71. String
+
+    GRDPNT parameter
+
+72. String
+
+    WTMASS parameter
+
+73. String
+
+    K6ROT parameter
+
+74. String
+
+    MAXRATIO parameter
+
+75. int
+
+    BAILOUT parameter
+
+76. int
+
+    PRGPST parameter
+
+77. int
+
+    NINC parameter
+
+78. int
+
+    KMETHOD parameter
+
+79. int
+
+    MAXITER parameter
+
+80. int
+
+    useEPSU parameter
+
+81. int
+
+    useEPSP parameter
+
+82. int
+
+    useEPSW parameter
+
+83. double
+
+    EPSU parameter
+
+84. double
+
+    EPSP parameter
+
+85. double
+
+    EPSW parameter
+
+86. int
+
+    NDT parameter
+
+87. double
+
+    DT parameter
+
+88. int
+
+    MAXITER parameter
+
+89. int
+
+    id parameter
+
+90. int
+
+    title parameter
+
+91. int
+
+    subcaseIdForLoad parameter
+
+92. int
+
+    subcaseIdForDload parameter
+
+93. int
+
+    subcaseIdForSpc parameter
+
+94. int
+
+    subcaseIdForMpc parameter
+
+95. int
+
+    subcaseIdForTempInit parameter
+
+96. int
+
+    subcaseIdForTempLoad parameter
+
+97. int
+
+    outputReq_Displacement parameter
+
+98. int
+
+    outputReq_Stress parameter
+
+99. int
+
+    outputReq_Strain parameter
+
+100. int
+
+     outputReq_Acceleration parameter
+
+101. int
+
+     outputReq_Velocity parameter
+
+102. Cursor
+
+     Cursor for edit mode
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+DynamisJob("Job1", "", \[\], 0, 1, 1, 0, 0, 0, 0, 0, 1, 1.79769e+308, 2147483647, 4, 1024, 0, 1, 101, "", \[1.79769e+308, 1.79769e+308, 2147483647\], \[1.79769e+308, 1.79769e+308, 2147483647, 0\], \[2147483647, 1.79769e+308, 2147483647, 0\], \[2147483647, 0, 0, 0, 2147483647, 0, 0, 0, 0, 0, 0, 0, 2147483647, 2147483647, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0\], \[0\], \[0, ""\], \[2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647\], \[-1, 0, 0, "", "", "", "", 2147483647, 2\], \[1, 3, 2147483647, 0, 0, 1, 1.79769e+308, 1.79769e+308, 0.01\], \[2147483647, 1.79769e+308, 2147483647\], \[\], 0:0)

@@ -1,0 +1,135 @@
+---
+lang: en
+title: Lbc_Bolt_Modeling_Type_C\_Edge
+---
+
+Lbc_Bolt_Modeling_Type_C\_Edge
+------------------------------
+
+## Description
+
+Create Lbc TypeC Bolt Edge method
+
+## Syntax
+
+Lbc_Bolt_Modeling_Type_C\_Edge(Cursor taEdgeCur1,Cursor taEdgeCur2,CString strRbeName,double dPlaneTol,double dMaxBoltHeight,int nConnectionType, int nCoincidentNodes, double dTolerance, int nGround,double dStiffnessX,double dStiffnessY,double dStiffnessZ,int nLocalStiffUnit,double dRotateStiffX,double dRotateStiffY,double dRotateStiffZ,int nLocalRotateStiffUnit, double dDampCoef, double dStressCoef,Cursor curCoord,int nTopRbeType,double dTopPitch,double dTopRemoveDepth,int nBotRbeType,double dBotPitch,double dBotRemoveDepth)
+
+## Inputs
+
+1.  Cursor\[\]
+
+    faces with circular edges in top side
+
+2.  Cursor\[\]
+
+    faces with circular edges in bottom side
+
+3.  CString
+
+    name of Rbe
+
+4.  double
+
+    Plane tolerance angle around the selected edge.
+
+5.  double
+
+    Maximum distance between top and bottom rbe
+
+6.  int
+
+    connection type,0 = Spring,1 = Rbe2
+
+7.  int
+
+    Coincident Nodes
+
+8.  double
+
+    Tolerance
+
+9.  int
+
+    Ground
+
+10. double
+
+    Stiffness X value
+
+11. double
+
+    Stiffness Y value
+
+12. double
+
+    Stiffness Z value
+
+13. int
+
+    Local Stiffness Unit
+
+14. double
+
+    Rotation Stiffness X value
+
+15. double
+
+    Rotation Stiffness Y value
+
+16. double
+
+    Rotation Stiffness Z value
+
+17. int
+
+    Local Rotate Stiffness Unit
+
+18. double
+
+    Damping Coefficient
+
+19. double
+
+    Stress Coefficient
+
+20. Cursor
+
+    referred coordinate system, NULL is global
+
+21. int
+
+    top Rbe type,0=RBE3,1=Rbe2
+
+22. double
+
+    Top bolt hole rbe range
+
+23. double
+
+    top slave nodes in this range will not be considered
+
+24. int
+
+    bottom Rbe type,0=RBE3,1=Rbe2
+
+25. double
+
+    bottom bolt hole rbe range
+
+26. double
+
+    bottom slave nodes in this range will not be considered
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+Lbc_Bolt_Modeling_Type_C\_Edge(\[5:66319\], \[5:10000031\], "RBE", 20, 0.1, 0, 1, 2.22507e-308, 0, 1.79769e+308, 1.79769e+308, 1.79769e+308, 0, 1.79769e+308, 1.79769e+308, 1.79769e+308, 0, 1.79769e+308, 1.79769e+308, 0:0, 0, 0.01, 0, 0, 0.01, 0)

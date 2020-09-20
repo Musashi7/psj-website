@@ -1,0 +1,35 @@
+---
+lang: en
+title: MergecBarBody
+---
+
+MergecBarBody
+-------------
+
+## Description
+
+Merge cBarPart
+
+## Syntax
+
+MergecBarBody(int\[\] taBodyKey)
+
+## Inputs
+
+1.  Int\[\]
+
+    Part cursor(\[Part ID\])
+
+## Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+## Sample Code
+
+MergecBarBody(\[6, 7\])

@@ -1,0 +1,21 @@
+# Edit Menu
+
+## Edit
+
+![](./../_images/IDE_Edit.png)  
+
+| Name                        | Description                                                  | Shortcut key |
+| --------------------------- | ------------------------------------------------------------ | :----------: |
+| Undo                        | Cancel the executed operation and return to the previous state |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`Z,badge-dark badge-pill`   |
+| Redo                        | Retry the canceled operation                                 |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`Y,badge-dark badge-pill`     |
+| Cut                         | Cut the selected text                                        |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`X,badge-dark badge-pill`   |
+| Copy                        | Copy the selected text                                       |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`C,badge-dark badge-pill`   |
+| Paste                       | Paste the Cut/Copy text                                      |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`V,badge-dark badge-pill`   |
+| Import Macro Log            | Import the macro of the executed command in the form of JPT.Exec(macro command) |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`M,badge-dark badge-pill`   |
+| Import Python Macro Log     | Import the executed PSJ-Command (only supported in the next version) |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`J,badge-dark badge-pill`   |
+| Import Script From Last Run | Import the Python script from last run in the IDE            |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`L,badge-dark badge-pill`   |
+| Find                        | Find a specific character in the script                      |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`F,badge-dark badge-pill`   |
+| Comment                     | Insert the comment tag "\#" before the selected script       |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`K,badge-dark badge-pill`   |
+| Toggle Comment              | Switch between comment and comment cancellation              |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`T,badge-dark badge-pill`   |
+| Go To Line                  | Go to a specific line in the script                          |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`G,badge-dark badge-pill`   |
+| Find And Replace            | Find and replace the specific characters in the script       |   {badge}`Ctrl,badge-dark badge-pill` + {badge}`H,badge-dark badge-pill`   |

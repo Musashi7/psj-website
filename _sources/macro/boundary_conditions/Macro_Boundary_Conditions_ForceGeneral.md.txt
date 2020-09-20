@@ -1,0 +1,107 @@
+---
+lang: en
+title: ForceGeneral
+---
+
+ForceGeneral
+------------
+
+#### Description
+
+Create Force general
+
+#### Syntax
+
+ForceGeneral(String name, Vector force, Vector moment, int arrowDir, int distributionMethod, Cursor crCoordinate, Cursor crTable, Cursor crNodeSet, double phase, double delay, Cursor crPhaseTable, String formulaFX, String formulaFY, String formulaFZ, String formulaMX, String formulaMY, String formulaMZ, Cursor\[\] targets, Cursor crEdit)
+
+#### Inputs
+
+1.  String
+
+    name
+
+2.  Vector
+
+    force
+
+3.  Vector
+
+    moment
+
+4.  int
+
+    arrorDir (0: Start at node, 1: End at node)
+
+5.  int
+
+    distributionMethod (0: Per selected entity, 1: Per node, 2: Total of select
+
+6.  Cursor
+
+    coordinate system
+
+7.  Cursor
+
+    table
+
+8.  Cursor
+
+    node set
+
+9.  double
+
+    phase
+
+10. double
+
+    delay
+
+11. Cursor
+
+    phase table
+
+12. String
+
+    formula of Force X
+
+13. String
+
+    formula of Force Y
+
+14. String
+
+    formula of Force Z
+
+15. String
+
+    formula of Moment X
+
+16. String
+
+    formula of Moment Y
+
+17. String
+
+    formula of Moment Z
+
+18. Cursor\[\]
+
+    targets
+
+19. Cursor
+
+    edit target
+
+#### Return Code
+
+1
+
+Succeeded
+
+0
+
+Failed
+
+#### Sample Code
+
+ForceGeneral("Force2", \[1, 2, 3\], \[0.004, 0.005, 0.006\], 0, 0, 0:0, 0:0, 0:0, 0, 0, 0:0, "", "", "", "", "", "", \[6:25\], 0:0)
